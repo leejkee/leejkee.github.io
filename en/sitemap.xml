@@ -2,151 +2,151 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://leejkee.github.io/</loc>
     <lastmod>2022-06-29T17:37:54+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/"
+                href="https://leejkee.github.io/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://example.com/ar/"
+                href="https://leejkee.github.io/ar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/"
+                href="https://leejkee.github.io/"
                 />
   </url><url>
-    <loc>https://example.com/post/</loc>
+    <loc>https://leejkee.github.io/post/</loc>
     <lastmod>2022-06-29T17:37:54+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/post/"
+                href="https://leejkee.github.io/zh-cn/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/post/"
+                href="https://leejkee.github.io/post/"
                 />
   </url><url>
-    <loc>https://example.com/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://leejkee.github.io/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2022-06-29T17:37:54+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/</loc>
+    <loc>https://leejkee.github.io/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2022-06-29T17:37:02+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/</loc>
+    <loc>https://leejkee.github.io/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/</loc>
     <lastmod>2022-06-29T17:36:32+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/how-to-uninstall-adhesive-applications-in-android/</loc>
+    <loc>https://leejkee.github.io/p/how-to-uninstall-adhesive-applications-in-android/</loc>
     <lastmod>2022-06-29T17:35:58+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</loc>
+    <loc>https://leejkee.github.io/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</loc>
     <lastmod>2022-06-29T17:34:42+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://leejkee.github.io/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2022-06-29T17:33:39+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://leejkee.github.io/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2022-06-29T17:32:26+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/%E4%BD%BF%E7%94%A8autorandr%E5%AE%8C%E6%88%90%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E5%90%8E%E8%87%AA%E5%8A%A8%E8%B0%83%E6%95%B4%E5%88%86%E8%BE%A8%E7%8E%87/</loc>
+    <loc>https://leejkee.github.io/p/%E4%BD%BF%E7%94%A8autorandr%E5%AE%8C%E6%88%90%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E5%90%8E%E8%87%AA%E5%8A%A8%E8%B0%83%E6%95%B4%E5%88%86%E8%BE%A8%E7%8E%87/</loc>
     <lastmod>2022-06-29T17:31:33+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</loc>
+    <loc>https://leejkee.github.io/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</loc>
     <lastmod>2022-06-29T17:30:48+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</loc>
+    <loc>https://leejkee.github.io/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</loc>
     <lastmod>2022-06-29T17:30:06+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
+    <loc>https://leejkee.github.io/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
     <lastmod>2022-06-29T17:29:21+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</loc>
+    <loc>https://leejkee.github.io/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</loc>
     <lastmod>2022-06-29T17:28:23+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/qemu%E5%BC%80%E5%90%AF%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</loc>
+    <loc>https://leejkee.github.io/p/qemu%E5%BC%80%E5%90%AF%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</loc>
     <lastmod>2022-06-29T17:27:04+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/how-to-use-git/</loc>
+    <loc>https://leejkee.github.io/p/how-to-use-git/</loc>
     <lastmod>2022-06-29T17:25:13+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/debian11%E4%B8%ADapache2%E5%BC%BA%E5%88%B6%E4%BD%BF%E7%94%A8https/</loc>
+    <loc>https://leejkee.github.io/p/debian11%E4%B8%ADapache2%E5%BC%BA%E5%88%B6%E4%BD%BF%E7%94%A8https/</loc>
     <lastmod>2022-06-29T17:23:55+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</loc>
+    <loc>https://leejkee.github.io/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</loc>
     <lastmod>2022-06-29T17:23:11+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</loc>
+    <loc>https://leejkee.github.io/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</loc>
     <lastmod>2022-06-29T17:22:21+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</loc>
+    <loc>https://leejkee.github.io/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</loc>
     <lastmod>2022-06-29T17:18:16+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/first/</loc>
+    <loc>https://leejkee.github.io/p/first/</loc>
     <lastmod>2022-06-29T16:44:08+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/about/</loc>
+    <loc>https://leejkee.github.io/about/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/archives/</loc>
+    <loc>https://leejkee.github.io/archives/</loc>
     <lastmod>2022-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/page/</loc>
+    <loc>https://leejkee.github.io/page/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://leejkee.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/categories/"
+                href="https://leejkee.github.io/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://example.com/ar/categories/"
+                href="https://leejkee.github.io/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/"
+                href="https://leejkee.github.io/categories/"
                 />
   </url><url>
-    <loc>https://example.com/links/</loc>
+    <loc>https://leejkee.github.io/links/</loc>
   </url><url>
-    <loc>https://example.com/search/</loc>
+    <loc>https://leejkee.github.io/search/</loc>
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://leejkee.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/tags/"
+                href="https://leejkee.github.io/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://example.com/ar/tags/"
+                href="https://leejkee.github.io/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/"
+                href="https://leejkee.github.io/tags/"
                 />
   </url><url>
-    <loc>https://example.com/categories/test/</loc>
+    <loc>https://leejkee.github.io/categories/test/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/categories/test/"
+                href="https://leejkee.github.io/zh-cn/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/test/"
+                href="https://leejkee.github.io/categories/test/"
                 />
   </url>
 </urlset>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>指尖协奏曲</title>
-        <link>https://example.com/</link>
+        <link>https://leejkee.github.io/</link>
         <description>Recent content on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:37:54 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jun 2022 17:37:54 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>怎么样搭建lamp架构的typecho博客</title>
-        <link>https://example.com/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/</link>
+        <link>https://leejkee.github.io/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Wed, 29 Jun 2022 17:37:54 +0800</pubDate>
         
-        <guid>https://example.com/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/</guid>
+        <guid>https://leejkee.github.io/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/</guid>
         <description>&lt;h1 id=&#34;使用debian11在本地配置lamp架构的web应用组和typecho博客框架&#34;&gt;使用debian11在本地配置lamp架构的web应用组和typecho博客框架&lt;/h1&gt;
 &lt;h2 id=&#34;先知&#34;&gt;先知&lt;/h2&gt;
 &lt;p&gt;1、what is the lamp?&lt;br&gt;
@@ -422,10 +422,10 @@ Typecho is a light and efficient website frame.&lt;/p&gt;
         </item>
         <item>
         <title>在Arch中安装zsh并配置p10k主题和补全、高亮插件</title>
-        <link>https://example.com/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/</link>
+        <link>https://leejkee.github.io/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/</link>
         <pubDate>Wed, 29 Jun 2022 17:37:02 +0800</pubDate>
         
-        <guid>https://example.com/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/</guid>
+        <guid>https://leejkee.github.io/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/</guid>
         <description>&lt;p&gt;Tips: The commands are all in archlinux platform.&lt;/p&gt;
 &lt;h2 id=&#34;zsh的安装&#34;&gt;zsh的安装&lt;/h2&gt;
 &lt;p&gt;*安装之前建议先&lt;code&gt;sudo pacman -Syu&lt;/code&gt;进行更新&lt;/p&gt;
@@ -594,10 +594,10 @@ Typecho is a light and efficient website frame.&lt;/p&gt;
         </item>
         <item>
         <title>关于linux中硬链接和符号链接</title>
-        <link>https://example.com/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/</link>
+        <link>https://leejkee.github.io/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/</link>
         <pubDate>Wed, 29 Jun 2022 17:36:32 +0800</pubDate>
         
-        <guid>https://example.com/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/</guid>
+        <guid>https://leejkee.github.io/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/</guid>
         <description>&lt;h1 id=&#34;关于linux中硬链接和符号链接软链接symbolic-link&#34;&gt;关于linux中硬链接和符号链接（软链接，Symbolic Link）&lt;/h1&gt;
 &lt;h2 id=&#34;硬链接&#34;&gt;硬链接&lt;/h2&gt;
 &lt;p&gt;通过索引节点链接。&lt;br&gt;
@@ -673,10 +673,10 @@ Typecho is a light and efficient website frame.&lt;/p&gt;
         </item>
         <item>
         <title>How to Uninstall Adhesive Applications in Android</title>
-        <link>https://example.com/p/how-to-uninstall-adhesive-applications-in-android/</link>
+        <link>https://leejkee.github.io/p/how-to-uninstall-adhesive-applications-in-android/</link>
         <pubDate>Wed, 29 Jun 2022 17:35:58 +0800</pubDate>
         
-        <guid>https://example.com/p/how-to-uninstall-adhesive-applications-in-android/</guid>
+        <guid>https://leejkee.github.io/p/how-to-uninstall-adhesive-applications-in-android/</guid>
         <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Preface:&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;As we know, some applications called &amp;ldquo;XiaomiStore&amp;rdquo;, we can&amp;rsquo;t remove it in our smartphone. However, a tool named &amp;ldquo;adb&amp;rdquo;, which means Android Debug Bridge, gives us the freedom.&lt;br&gt;
 This page will tell you what it is and how to use, a command line tool, which can remove the adhesive apps.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;em&gt;&lt;!-- raw HTML omitted --&gt;Tips: This function is true only in &lt;strong&gt;Windows10&lt;/strong&gt; .&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;This is my first blog in English, whose mistakes could be send to &lt;code&gt;cww.lhame@foxmail.com&lt;/code&gt;.&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
@@ -857,10 +857,10 @@ We want to remove a application called &amp;ldquo;XiaomiPayment&amp;rdquo;, we c
         </item>
         <item>
         <title>使用systemd-Boot去引导系统开机</title>
-        <link>https://example.com/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</link>
+        <link>https://leejkee.github.io/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</link>
         <pubDate>Wed, 29 Jun 2022 17:34:42 +0800</pubDate>
         
-        <guid>https://example.com/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</guid>
+        <guid>https://leejkee.github.io/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</guid>
         <description>&lt;h1 id=&#34;使用archlinux自带的systemd-boot去引导系统开机&#34;&gt;使用archlinux自带的systemd-boot去引导系统开机&lt;/h1&gt;
 &lt;p&gt;注意：下面假定你的电脑已经使用 &lt;strong&gt;grub&lt;/strong&gt; 方案，那么如何替换成 &lt;strong&gt;systemd——boot&lt;/strong&gt; 是本文记录的主要内容。如果你恰好刚刚准备在虚拟机或者你的个人PC上安装Archlinux，那么本文也将作为可参考文章；如果你是linux新手，建议先尝试ubuntu，你将很平滑地从Windows过度到GNU/linux。&lt;br&gt;
 此外，使用gpt格式是必须的，因为需要磁盘唯一标识符uuid。&lt;/p&gt;
@@ -1001,10 +1001,10 @@ We want to remove a application called &amp;ldquo;XiaomiPayment&amp;rdquo;, we c
         </item>
         <item>
         <title>使用systemd Networkd管理网络</title>
-        <link>https://example.com/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</link>
+        <link>https://leejkee.github.io/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</link>
         <pubDate>Wed, 29 Jun 2022 17:33:39 +0800</pubDate>
         
-        <guid>https://example.com/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</guid>
+        <guid>https://leejkee.github.io/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</guid>
         <description>&lt;h1 id=&#34;archlinux使用systemd-networkd管理网络&#34;&gt;Archlinux，使用systemd-networkd管理网络&lt;/h1&gt;
 &lt;h2 id=&#34;1dhcp&#34;&gt;1、DHCP&lt;/h2&gt;
 &lt;h3 id=&#34;dhcpcd&#34;&gt;dhcpcd&lt;/h3&gt;
@@ -1114,10 +1114,10 @@ We want to remove a application called &amp;ldquo;XiaomiPayment&amp;rdquo;, we c
         </item>
         <item>
         <title>标签栏过小问题</title>
-        <link>https://example.com/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
+        <link>https://leejkee.github.io/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
         <pubDate>Wed, 29 Jun 2022 17:32:26 +0800</pubDate>
         
-        <guid>https://example.com/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
+        <guid>https://leejkee.github.io/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
         <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Preface&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;  ：如果笔记本电脑的屏幕分辨率很高，而屏幕尺寸很小，比如我的Huawei Matebook13，只有13.3英寸，却是2K的分辨率，打开浏览器或者其他软件都可能会出现字体很小的情况，这是正常的，因为xrandr只能识别支持的分辨率，而不知道屏幕尺寸。&lt;/p&gt;
 &lt;p&gt;你可以选择使用xrandr调节分辨率去解决，这样会牺牲高分辨率的显示，具体方法可以看我的帖子&lt;a class=&#34;link&#34; href=&#34;https://leejkee.github.io/2022/02/05/%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E6%96%B9%E6%A1%88/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;调整分辨率&lt;/a&gt;那篇；本文介绍通过调整软件启动的dpi解决该问题，字体过小也只会出现在地址栏，因为其他的字体大小都可以通过浏览器设置调整.&lt;/p&gt;
@@ -1197,10 +1197,10 @@ We want to remove a application called &amp;ldquo;XiaomiPayment&amp;rdquo;, we c
         </item>
         <item>
         <title>使用autorandr完成笔记本电脑外接显示器后自动调整分辨率</title>
-        <link>https://example.com/p/%E4%BD%BF%E7%94%A8autorandr%E5%AE%8C%E6%88%90%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E5%90%8E%E8%87%AA%E5%8A%A8%E8%B0%83%E6%95%B4%E5%88%86%E8%BE%A8%E7%8E%87/</link>
+        <link>https://leejkee.github.io/p/%E4%BD%BF%E7%94%A8autorandr%E5%AE%8C%E6%88%90%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E5%90%8E%E8%87%AA%E5%8A%A8%E8%B0%83%E6%95%B4%E5%88%86%E8%BE%A8%E7%8E%87/</link>
         <pubDate>Wed, 29 Jun 2022 17:31:33 +0800</pubDate>
         
-        <guid>https://example.com/p/%E4%BD%BF%E7%94%A8autorandr%E5%AE%8C%E6%88%90%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E5%90%8E%E8%87%AA%E5%8A%A8%E8%B0%83%E6%95%B4%E5%88%86%E8%BE%A8%E7%8E%87/</guid>
+        <guid>https://leejkee.github.io/p/%E4%BD%BF%E7%94%A8autorandr%E5%AE%8C%E6%88%90%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E5%90%8E%E8%87%AA%E5%8A%A8%E8%B0%83%E6%95%B4%E5%88%86%E8%BE%A8%E7%8E%87/</guid>
         <description>&lt;p&gt;&lt;em&gt;The commands are all in archlinux.&lt;/em&gt;&lt;/p&gt;
 &lt;h1 id=&#34;使用autorandr完成笔记本电脑外接显示器后自动调整分辨率&#34;&gt;使用autorandr完成笔记本电脑外接显示器后自动调整分辨率&lt;/h1&gt;
 &lt;p&gt;如果在安装plasma时选择plasma-desktop，而不安装kde-applications，也就是轻量安装，我们可以通过使用一个软件去解决这一需求。&lt;br&gt;
@@ -1409,10 +1409,10 @@ github后面附带详细的配置教程。&lt;/p&gt;
         </item>
         <item>
         <title>Dwm下使用蓝牙耳机听歌</title>
-        <link>https://example.com/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</link>
+        <link>https://leejkee.github.io/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</link>
         <pubDate>Wed, 29 Jun 2022 17:30:48 +0800</pubDate>
         
-        <guid>https://example.com/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</guid>
+        <guid>https://leejkee.github.io/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</guid>
         <description>&lt;p&gt;dwm不同于其他de，要使用蓝牙耳机，需要安装蓝牙协议栈以及蓝牙控制软件，并且需要额外安装&lt;code&gt;pulseaudio-bluetooth&lt;/code&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;installation&#34;&gt;installation&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1463,10 +1463,10 @@ github后面附带详细的配置教程。&lt;/p&gt;
         </item>
         <item>
         <title>如何安装dwm</title>
-        <link>https://example.com/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</link>
+        <link>https://leejkee.github.io/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</link>
         <pubDate>Wed, 29 Jun 2022 17:30:06 +0800</pubDate>
         
-        <guid>https://example.com/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</guid>
+        <guid>https://leejkee.github.io/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</guid>
         <description>&lt;h1 id=&#34;archlinux下使用-__dwm__&#34;&gt;ArchLinux下使用 &lt;strong&gt;dwm&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;写在前面：&lt;/strong&gt;
 我想我不需要解释为什么使用dwm，有想折腾的，有觉得轻量用地很舒服的，有抱着学习一下试一试的心态去接触的&amp;hellip;&amp;hellip;总之每个人都有不同的看法，无需和其他wm或者de相互比较，大家用的开心就好。&lt;/p&gt;
@@ -1650,10 +1650,10 @@ dwm安装后，使用&lt;/p&gt;
         </item>
         <item>
         <title>不能被重载的运算符</title>
-        <link>https://example.com/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+        <link>https://leejkee.github.io/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
         <pubDate>Wed, 29 Jun 2022 17:29:21 +0800</pubDate>
         
-        <guid>https://example.com/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+        <guid>https://leejkee.github.io/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
         <description>&lt;h3 id=&#34;不能被重载的运算符只有5个&#34;&gt;不能被重载的运算符只有5个：&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;. (成员访问运算符)&lt;/li&gt;
@@ -1670,10 +1670,10 @@ dwm安装后，使用&lt;/p&gt;
         </item>
         <item>
         <title>C中的scanf和printf</title>
-        <link>https://example.com/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</link>
+        <link>https://leejkee.github.io/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</link>
         <pubDate>Wed, 29 Jun 2022 17:28:23 +0800</pubDate>
         
-        <guid>https://example.com/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</guid>
+        <guid>https://leejkee.github.io/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</guid>
         <description>&lt;h1 id=&#34;关于c的输入流&#34;&gt;关于c的输入流&lt;/h1&gt;
 &lt;h2 id=&#34;scanf和scanf_s&#34;&gt;scanf()和scanf_s()&lt;/h2&gt;
 &lt;h1 id=&#34;c的输出流&#34;&gt;c的输出流&lt;/h1&gt;
@@ -1757,10 +1757,10 @@ eg:&lt;/p&gt;
         </item>
         <item>
         <title>Qemu开启虚拟网卡</title>
-        <link>https://example.com/p/qemu%E5%BC%80%E5%90%AF%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</link>
+        <link>https://leejkee.github.io/p/qemu%E5%BC%80%E5%90%AF%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</link>
         <pubDate>Wed, 29 Jun 2022 17:27:04 +0800</pubDate>
         
-        <guid>https://example.com/p/qemu%E5%BC%80%E5%90%AF%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</guid>
+        <guid>https://leejkee.github.io/p/qemu%E5%BC%80%E5%90%AF%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</guid>
         <description>&lt;h1 id=&#34;kvmqemu在开启虚拟机时出现无法开机并且提示virtual-network-default-inactive&#34;&gt;kvm/qemu在开启虚拟机时出现无法开机，并且提示virtual network default &amp;ldquo;Inactive&amp;rdquo;&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;function 1
@@ -1789,10 +1789,10 @@ eg:&lt;/p&gt;
         </item>
         <item>
         <title>How to Use Git</title>
-        <link>https://example.com/p/how-to-use-git/</link>
+        <link>https://leejkee.github.io/p/how-to-use-git/</link>
         <pubDate>Wed, 29 Jun 2022 17:25:13 +0800</pubDate>
         
-        <guid>https://example.com/p/how-to-use-git/</guid>
+        <guid>https://leejkee.github.io/p/how-to-use-git/</guid>
         <description>&lt;h1 id=&#34;all-this-pages-are-about-how-to-use-__git__-a-code-manager&#34;&gt;All this pages are about how to use &lt;strong&gt;git&lt;/strong&gt;, a code manager.&lt;/h1&gt;
 &lt;h2 id=&#34;clone-a-repo-or-project&#34;&gt;clone a repo or project&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1884,10 +1884,10 @@ Then, upload your public key to your github.&lt;/p&gt;
         </item>
         <item>
         <title>Debian11中apache2强制使用https</title>
-        <link>https://example.com/p/debian11%E4%B8%ADapache2%E5%BC%BA%E5%88%B6%E4%BD%BF%E7%94%A8https/</link>
+        <link>https://leejkee.github.io/p/debian11%E4%B8%ADapache2%E5%BC%BA%E5%88%B6%E4%BD%BF%E7%94%A8https/</link>
         <pubDate>Wed, 29 Jun 2022 17:23:55 +0800</pubDate>
         
-        <guid>https://example.com/p/debian11%E4%B8%ADapache2%E5%BC%BA%E5%88%B6%E4%BD%BF%E7%94%A8https/</guid>
+        <guid>https://leejkee.github.io/p/debian11%E4%B8%ADapache2%E5%BC%BA%E5%88%B6%E4%BD%BF%E7%94%A8https/</guid>
         <description>&lt;h1 id=&#34;apache2强制使用https&#34;&gt;apache2强制使用https&lt;/h1&gt;
 &lt;h2 id=&#34;在etcapache2sites-available000-defaultconf加入以下内容&#34;&gt;在/etc/apache2/sites-available/000-default.conf加入以下内容&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1917,10 +1917,10 @@ Then, upload your public key to your github.&lt;/p&gt;
         </item>
         <item>
         <title>怎么在debian11中设置获取静态ip地址</title>
-        <link>https://example.com/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</link>
+        <link>https://leejkee.github.io/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</link>
         <pubDate>Wed, 29 Jun 2022 17:23:11 +0800</pubDate>
         
-        <guid>https://example.com/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</guid>
+        <guid>https://leejkee.github.io/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</guid>
         <description>&lt;h1 id=&#34;怎么在debian11中设置获取静态ip地址&#34;&gt;怎么在debian11中设置获取静态ip地址&lt;/h1&gt;
 &lt;p&gt;如果你的电脑拥有以太网卡，你需要选择以下两种方法之一为其配置ip，这样电脑才能上网。&lt;/p&gt;
 &lt;p&gt;1、最简单的方法就是使用动态主机配置协议DHCP(Dynamic Host Configuration Protocol)进行动态配置，他需要在局域网中有一个DHCP服务器，它可能提示需要主机名，对应的设置如下。然后DHCP服务器才会向主机发送合适的网络配置。&lt;/p&gt;
@@ -1970,10 +1970,10 @@ Then, upload your public key to your github.&lt;/p&gt;
         </item>
         <item>
         <title>在btrfs文件系统上安装archlinux</title>
-        <link>https://example.com/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</link>
+        <link>https://leejkee.github.io/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</link>
         <pubDate>Wed, 29 Jun 2022 17:22:21 +0800</pubDate>
         
-        <guid>https://example.com/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</guid>
+        <guid>https://leejkee.github.io/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</guid>
         <description>&lt;p&gt;这篇记录也是我第一次正式记录archlinux安装过程的note，安装在btrfs文件系统上，是我最新尝试的内容，因为它应该是大势所趋。&lt;/p&gt;
 &lt;h1 id=&#34;系统的安装&#34;&gt;系统的安装&lt;/h1&gt;
 &lt;h2 id=&#34;分区&#34;&gt;分区&lt;/h2&gt;
@@ -2263,10 +2263,10 @@ like this:&lt;/p&gt;
         </item>
         <item>
         <title>Archlinux下使用kvm</title>
-        <link>https://example.com/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</link>
+        <link>https://leejkee.github.io/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</link>
         <pubDate>Wed, 29 Jun 2022 17:18:16 +0800</pubDate>
         
-        <guid>https://example.com/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</guid>
+        <guid>https://leejkee.github.io/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</guid>
         <description>&lt;p&gt;intel支持虚拟化&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2423,19 +2423,19 @@ in /etc/modules-load.d/virtio-net.conf&lt;/p&gt;
         </item>
         <item>
         <title>First</title>
-        <link>https://example.com/p/first/</link>
+        <link>https://leejkee.github.io/p/first/</link>
         <pubDate>Wed, 29 Jun 2022 16:44:08 +0800</pubDate>
         
-        <guid>https://example.com/p/first/</guid>
+        <guid>https://leejkee.github.io/p/first/</guid>
         <description>&lt;p&gt;Hey, this is first pages.&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>About</title>
-        <link>https://example.com/about/</link>
+        <link>https://leejkee.github.io/about/</link>
         <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/about/</guid>
+        <guid>https://leejkee.github.io/about/</guid>
         <description>&lt;p&gt;My email: &lt;code&gt;cwwlhame@outlook.com&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;My bilibili: &lt;a class=&#34;link&#34; href=&#34;https://space.bilibili.com/382690242?spm_id_from=333.1007.0.0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;lhame&amp;rsquo;s space&lt;/a&gt;&lt;/p&gt;
@@ -2445,26 +2445,26 @@ in /etc/modules-load.d/virtio-net.conf&lt;/p&gt;
         </item>
         <item>
         <title>Archives</title>
-        <link>https://example.com/archives/</link>
+        <link>https://leejkee.github.io/archives/</link>
         <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/archives/</guid>
+        <guid>https://leejkee.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Links</title>
-        <link>https://example.com/links/</link>
+        <link>https://leejkee.github.io/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/links/</guid>
+        <guid>https://leejkee.github.io/links/</guid>
         <description></description>
         </item>
         <item>
         <title>Search</title>
-        <link>https://example.com/search/</link>
+        <link>https://leejkee.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/search/</guid>
+        <guid>https://leejkee.github.io/search/</guid>
         <description></description>
         </item>
         

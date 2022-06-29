@@ -8,7 +8,7 @@
 在这之前需要将作为系统分区的/dev/sda3挂载到/mnt下。
 create the subvol=@ 1 btrfs su cr /mnt/@ create the subvol=@home 1 btrfs su cr /mnt/@home 挂载子卷 1 2 3 4 5 6 umount /mnt mount -o noatime,space_cahche=v2,compress=zstd,ssd,discard=async,subvol=@ /dev/sda1 /mnt mkdir /mnt/home mkdir /mnt/boot mount -o noatime,space_cahche=v2,compress=zstd,ssd,discard=async,subvol=@home /dev/sda1 /mnt/home mount /dev/sda1 /mnt/boot 安装系统 1 pacstrap /mnt base linux linux-firmware btrfs-progs 这些都是需要安装的最基本的部分，包含最基本的系统，内核以及固件。'><title>在btrfs文件系统上安装archlinux</title>
 
-<link rel='canonical' href='https://example.com/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/'>
+<link rel='canonical' href='https://leejkee.github.io/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/'>
 
 <link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='在btrfs文件系统上安装archlinux'>
 <meta property='og:description' content='这篇记录也是我第一次正式记录archlinux安装过程的note，安装在btrfs文件系统上，是我最新尝试的内容，因为它应该是大势所趋。
@@ -17,7 +17,7 @@ create the subvol=@ 1 btrfs su cr /mnt/@ create the subvol=@home 1 btrfs su cr /
 1 2 3 4 5 6 7 [lee@Arch ~]$ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINTS sda 8:0 0 20G 0 disk ├─sda1 8:1 0 300M 0 part /boot ├─sda2 8:2 0 4G 0 part [SWAP] └─sda3 8:3 0 15.7G 0 part /home / 创建子卷 我只创建home子卷，其他的默认在root下。
 在这之前需要将作为系统分区的/dev/sda3挂载到/mnt下。
 create the subvol=@ 1 btrfs su cr /mnt/@ create the subvol=@home 1 btrfs su cr /mnt/@home 挂载子卷 1 2 3 4 5 6 umount /mnt mount -o noatime,space_cahche=v2,compress=zstd,ssd,discard=async,subvol=@ /dev/sda1 /mnt mkdir /mnt/home mkdir /mnt/boot mount -o noatime,space_cahche=v2,compress=zstd,ssd,discard=async,subvol=@home /dev/sda1 /mnt/home mount /dev/sda1 /mnt/boot 安装系统 1 pacstrap /mnt base linux linux-firmware btrfs-progs 这些都是需要安装的最基本的部分，包含最基本的系统，内核以及固件。'>
-<meta property='og:url' content='https://example.com/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/'>
+<meta property='og:url' content='https://leejkee.github.io/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/'>
 <meta property='og:site_name' content='指尖协奏曲'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-06-29T17:22:21&#43;08:00'/><meta property='article:modified_time' content='2022-06-29T17:22:21&#43;08:00'/>
 <meta name="twitter:title" content="在btrfs文件系统上安装archlinux">
@@ -246,11 +246,11 @@ create the subvol=@ 1 btrfs su cr /mnt/@ create the subvol=@home 1 btrfs su cr /
 
                     <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
                         
-                            <option value="https://example.com/" selected>English</option>
+                            <option value="https://leejkee.github.io/" selected>English</option>
                         
-                            <option value="https://example.com/zh-cn/" >中文</option>
+                            <option value="https://leejkee.github.io/zh-cn/" >中文</option>
                         
-                            <option value="https://example.com/ar/" >عربي</option>
+                            <option value="https://leejkee.github.io/ar/" >عربي</option>
                         
                     </select>
                 </li>
