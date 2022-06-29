@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='ArchLinux下使用 dwm 写在前面： 我想我不需要解释为什么使用dwm，有想折腾的，有觉得轻量用地很舒服的，有抱着学习一下试一试的心态去接触的&amp;hellip;&amp;hellip;总之每个人都有不同的看法，无需和其他wm或者de相互比较，大家用的开心就好。
+dwm是一个窗口管理器，你可以理解为诸如gnome类的桌面环境，它被称为动态窗口管理器。
+安装需要的依赖 xorg(和显示图形界面有关的协议) 1 sudo pacman -S xorg-server xorg-xinit xorg 字体
+中文字体和英文字体，以及一些图标的字体（nerd fonts），代码字体 1 sudo pacman -S noto-fonts-cjk wqy-microhei adobe-source-code-pro-fonts ttf-nerd-fonts-symbols ttf-jetbrains-mono 然后是我想啰嗦的一些 考虑到也许吧，可能会有人看到我的视频，写一些有关linux的基础的东西，想起来啥就补啥。
+git
+下面使用到的git clone其实是在后面那个网址去下载它的项目源码到本地，我这里是没有加什么参数的，所以在什么目录执行这个命令，源码就下载到这个目录下的一个和项目同名的文件夹里面，比如我下面安装dwm的其实就下载到了一个名为dwm的目录下 wget,curl一些下载工具
+一个下载软件的命令行工具，使用linux下的cli（命令行）软件可以节省很多时间，就是前期入门比较麻烦。
+比如我要下载dwm的透明补丁 1 wget https://dwm.suckless.org/patches/alpha/dwm-alpha-20201019-61bb8b2.diff 善于使用tab补全机制 很多情况下，比如在终端里，打一部分的命令，然后使用tab键可以直接补全命令，比如输入pac，可以直接补全为pacman,在默认的shell(bash)中，如果遇到键入的命令前缀有多个匹配项，则再按一次tab会列出这些选项。
+不光是命令补全，更多的用到的是补全这个文件目录下的文件名，下载的一些图片文件文件名都很长，比如需要删除某个文件，可以 1 rm &amp;lt;文件名&amp;gt; 这个文件名就可以不用打全，打个开头然后tab一下就可以利用补全机制
+其他软件 我使用的终端：Alacritty(arch下使用pacman直接安装)
+1 sudo pacman -S alacritty dwm里面我同样推荐的终端： 同样c语言编写的Terminal——st(simple terminal)
+下载源码，使用git下载源码
+1 git clone https://git.suckless.org/st 1 cd st &amp;amp;&amp;amp; sudo make clean install 安装dwm 安装之前请先安装依赖部分
+官方原版'><title>如何安装dwm</title>
+
+<link rel='canonical' href='https://example.com/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='如何安装dwm'>
+<meta property='og:description' content='ArchLinux下使用 dwm 写在前面： 我想我不需要解释为什么使用dwm，有想折腾的，有觉得轻量用地很舒服的，有抱着学习一下试一试的心态去接触的&amp;hellip;&amp;hellip;总之每个人都有不同的看法，无需和其他wm或者de相互比较，大家用的开心就好。
+dwm是一个窗口管理器，你可以理解为诸如gnome类的桌面环境，它被称为动态窗口管理器。
+安装需要的依赖 xorg(和显示图形界面有关的协议) 1 sudo pacman -S xorg-server xorg-xinit xorg 字体
+中文字体和英文字体，以及一些图标的字体（nerd fonts），代码字体 1 sudo pacman -S noto-fonts-cjk wqy-microhei adobe-source-code-pro-fonts ttf-nerd-fonts-symbols ttf-jetbrains-mono 然后是我想啰嗦的一些 考虑到也许吧，可能会有人看到我的视频，写一些有关linux的基础的东西，想起来啥就补啥。
+git
+下面使用到的git clone其实是在后面那个网址去下载它的项目源码到本地，我这里是没有加什么参数的，所以在什么目录执行这个命令，源码就下载到这个目录下的一个和项目同名的文件夹里面，比如我下面安装dwm的其实就下载到了一个名为dwm的目录下 wget,curl一些下载工具
+一个下载软件的命令行工具，使用linux下的cli（命令行）软件可以节省很多时间，就是前期入门比较麻烦。
+比如我要下载dwm的透明补丁 1 wget https://dwm.suckless.org/patches/alpha/dwm-alpha-20201019-61bb8b2.diff 善于使用tab补全机制 很多情况下，比如在终端里，打一部分的命令，然后使用tab键可以直接补全命令，比如输入pac，可以直接补全为pacman,在默认的shell(bash)中，如果遇到键入的命令前缀有多个匹配项，则再按一次tab会列出这些选项。
+不光是命令补全，更多的用到的是补全这个文件目录下的文件名，下载的一些图片文件文件名都很长，比如需要删除某个文件，可以 1 rm &amp;lt;文件名&amp;gt; 这个文件名就可以不用打全，打个开头然后tab一下就可以利用补全机制
+其他软件 我使用的终端：Alacritty(arch下使用pacman直接安装)
+1 sudo pacman -S alacritty dwm里面我同样推荐的终端： 同样c语言编写的Terminal——st(simple terminal)
+下载源码，使用git下载源码
+1 git clone https://git.suckless.org/st 1 cd st &amp;amp;&amp;amp; sudo make clean install 安装dwm 安装之前请先安装依赖部分
+官方原版'>
+<meta property='og:url' content='https://example.com/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/'>
+<meta property='og:site_name' content='指尖协奏曲'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-06-29T17:30:06&#43;08:00'/><meta property='article:modified_time' content='2022-06-29T17:30:06&#43;08:00'/>
+<meta name="twitter:title" content="如何安装dwm">
+<meta name="twitter:description" content="ArchLinux下使用 dwm 写在前面： 我想我不需要解释为什么使用dwm，有想折腾的，有觉得轻量用地很舒服的，有抱着学习一下试一试的心态去接触的&amp;hellip;&amp;hellip;总之每个人都有不同的看法，无需和其他wm或者de相互比较，大家用的开心就好。
+dwm是一个窗口管理器，你可以理解为诸如gnome类的桌面环境，它被称为动态窗口管理器。
+安装需要的依赖 xorg(和显示图形界面有关的协议) 1 sudo pacman -S xorg-server xorg-xinit xorg 字体
+中文字体和英文字体，以及一些图标的字体（nerd fonts），代码字体 1 sudo pacman -S noto-fonts-cjk wqy-microhei adobe-source-code-pro-fonts ttf-nerd-fonts-symbols ttf-jetbrains-mono 然后是我想啰嗦的一些 考虑到也许吧，可能会有人看到我的视频，写一些有关linux的基础的东西，想起来啥就补啥。
+git
+下面使用到的git clone其实是在后面那个网址去下载它的项目源码到本地，我这里是没有加什么参数的，所以在什么目录执行这个命令，源码就下载到这个目录下的一个和项目同名的文件夹里面，比如我下面安装dwm的其实就下载到了一个名为dwm的目录下 wget,curl一些下载工具
+一个下载软件的命令行工具，使用linux下的cli（命令行）软件可以节省很多时间，就是前期入门比较麻烦。
+比如我要下载dwm的透明补丁 1 wget https://dwm.suckless.org/patches/alpha/dwm-alpha-20201019-61bb8b2.diff 善于使用tab补全机制 很多情况下，比如在终端里，打一部分的命令，然后使用tab键可以直接补全命令，比如输入pac，可以直接补全为pacman,在默认的shell(bash)中，如果遇到键入的命令前缀有多个匹配项，则再按一次tab会列出这些选项。
+不光是命令补全，更多的用到的是补全这个文件目录下的文件名，下载的一些图片文件文件名都很长，比如需要删除某个文件，可以 1 rm &amp;lt;文件名&amp;gt; 这个文件名就可以不用打全，打个开头然后tab一下就可以利用补全机制
+其他软件 我使用的终端：Alacritty(arch下使用pacman直接安装)
+1 sudo pacman -S alacritty dwm里面我同样推荐的终端： 同样c语言编写的Terminal——st(simple terminal)
+下载源码，使用git下载源码
+1 git clone https://git.suckless.org/st 1 cd st &amp;amp;&amp;amp; sudo make clean install 安装dwm 安装之前请先安装依赖部分
+官方原版">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/Peng-Yuyan_hu9f16255a9f6c8a382c2f065cba9d4ae4_45148_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">指尖协奏曲</a></h1>
+            <h2 class="site-description">那就这样吧</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://bilibili.com'
+                        target="_blank"
+                        title="bilibili"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1656473953183" class="icon" viewBox="0 0 1129 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2430" width="35.28125" height="32" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M234.909 9.656a80.468 80.468 0 0 1 68.398 0 167.374 167.374 0 0 1 41.843 30.578l160.937 140.82h115.07l160.936-140.82a168.983 168.983 0 0 1 41.843-30.578A80.468 80.468 0 0 1 930.96 76.445a80.468 80.468 0 0 1-17.703 53.914 449.818 449.818 0 0 1-35.406 32.187 232.553 232.553 0 0 1-22.531 18.508h100.585a170.593 170.593 0 0 1 118.289 53.109 171.397 171.397 0 0 1 53.914 118.288v462.693a325.897 325.897 0 0 1-4.024 70.007 178.64 178.64 0 0 1-80.468 112.656 173.007 173.007 0 0 1-92.539 25.75h-738.7a341.186 341.186 0 0 1-72.421-4.024A177.835 177.835 0 0 1 28.91 939.065a172.202 172.202 0 0 1-27.36-92.539V388.662a360.498 360.498 0 0 1 0-66.789A177.03 177.03 0 0 1 162.487 178.64h105.414c-16.899-12.07-31.383-26.555-46.672-39.43a80.468 80.468 0 0 1-25.75-65.984 80.468 80.468 0 0 1 39.43-63.57M216.4 321.873a80.468 80.468 0 0 0-63.57 57.937 108.632 108.632 0 0 0 0 30.578v380.615a80.468 80.468 0 0 0 55.523 80.469 106.218 106.218 0 0 0 34.601 5.632h654.208a80.468 80.468 0 0 0 76.444-47.476 112.656 112.656 0 0 0 8.047-53.109v-354.06a135.187 135.187 0 0 0 0-38.625 80.468 80.468 0 0 0-52.304-54.719 129.554 129.554 0 0 0-49.89-7.242H254.22a268.764 268.764 0 0 0-37.82 0z m0 0" fill="#20B0E3" p-id="2431"></path><path d="M348.369 447.404a80.468 80.468 0 0 1 55.523 18.507 80.468 80.468 0 0 1 28.164 59.547v80.468a80.468 80.468 0 0 1-16.094 51.5 80.468 80.468 0 0 1-131.968-9.656 104.609 104.609 0 0 1-10.46-54.719v-80.468a80.468 80.468 0 0 1 70.007-67.593z m416.02 0a80.468 80.468 0 0 1 86.102 75.64v80.468a94.148 94.148 0 0 1-12.07 53.11 80.468 80.468 0 0 1-132.773 0 95.757 95.757 0 0 1-12.875-57.133V519.02a80.468 80.468 0 0 1 70.007-70.812z m0 0" fill="#20B0E3" p-id="2432"></path></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://bilibili.com'
+                        target="_blank"
+                        title="csdn"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1656474051084" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3841" width="32" height="32" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M229.12 841.92c-170.88-237.76-46.4-629.12 236.16-716.8 118.4-38.08 262.72-16.96 351.36 74.24 48.64 43.2 1.28 102.4-24.96 141.76-81.92-62.4-179.2-143.04-289.92-102.08C303.36 310.4 232 593.28 338.24 764.8c128 141.44 358.08 94.08 488.64-20.48 42.88 37.12 88.96 112.32 24.64 153.92-182.4 120.96-474.24 120-622.4-56.32z" fill="#D81E06" p-id="3842"></path></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/leejkee'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1656474005315" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3534" width="32" height="32" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#4186F5" p-id="3535"></path><path d="M611.944 302.056c0-15.701 2.75-30.802 7.816-44.917a384.238 384.238 0 0 0-186.11 2.956c-74.501-50.063-93.407-71.902-107.975-39.618a136.243 136.243 0 0 0-3.961 102.287 149.515 149.515 0 0 0-39.949 104.806c0 148.743 92.139 181.875 179.961 191.61a83.898 83.898 0 0 0-25.192 51.863c-40.708 22.518-91.94 8.261-115.181-32.058a83.117 83.117 0 0 0-60.466-39.98s-38.871-0.361-2.879 23.408a102.97 102.97 0 0 1 43.912 56.906s23.398 75.279 133.531 51.863v65.913c0 10.443 13.548 42.63 102.328 42.63 71.275 0 94.913-30.385 94.913-42.987V690.485a90.052 90.052 0 0 0-26.996-72.03c83.996-9.381 173.328-40.204 179.6-176.098a164.706 164.706 0 0 1-21.129 1.365c-84.07 0-152.223-63.426-152.223-141.666z" fill="#FFFFFF" p-id="3536"></path><path d="M743.554 322.765a136.267 136.267 0 0 0-3.961-102.289s-32.396-10.445-107.979 39.618a385.536 385.536 0 0 0-11.853-2.956 132.623 132.623 0 0 0-7.816 44.917c0 78.24 68.152 141.667 152.222 141.667 7.171 0 14.222-0.472 21.129-1.365 0.231-5.03 0.363-10.187 0.363-15.509a149.534 149.534 0 0 0-42.105-104.083z" fill="#FFFFFF" opacity=".4" p-id="3537"></path></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://example.com/" selected>English</option>
+                        
+                            <option value="https://example.com/zh-cn/" >中文</option>
+                        
+                            <option value="https://example.com/ar/" >عربي</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/">如何安装dwm</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 29, 2022</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="archlinux下使用-__dwm__">ArchLinux下使用 <strong>dwm</strong></h1>
+<p><strong>写在前面：</strong>
+我想我不需要解释为什么使用dwm，有想折腾的，有觉得轻量用地很舒服的，有抱着学习一下试一试的心态去接触的&hellip;&hellip;总之每个人都有不同的看法，无需和其他wm或者de相互比较，大家用的开心就好。</p>
+<p><a class="link" href="https://dwm.suckless.org/"  target="_blank" rel="noopener"
+    >dwm</a>是一个窗口管理器，你可以理解为诸如gnome类的桌面环境，它被称为动态窗口管理器。</p>
+<h2 id="安装需要的依赖">安装需要的依赖</h2>
+<ul>
+<li>xorg(和显示图形界面有关的协议)</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo pacman -S xorg-server xorg-xinit xorg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>字体<br>
+中文字体和英文字体，以及一些图标的字体（nerd fonts），代码字体</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo pacman -S noto-fonts-cjk wqy-microhei adobe-source-code-pro-fonts ttf-nerd-fonts-symbols ttf-jetbrains-mono
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="然后是我想啰嗦的一些">然后是我想啰嗦的一些</h2>
+<p>考虑到也许吧，可能会有人看到我的视频，写一些有关linux的基础的东西，想起来啥就补啥。</p>
+<ul>
+<li>git<br>
+下面使用到的git clone其实是在后面那个网址去下载它的项目源码到本地，我这里是没有加什么参数的，所以在什么目录执行这个命令，源码就下载到这个目录下的一个和项目同名的文件夹里面，比如我下面安装dwm的其实就下载到了一个名为dwm的目录下</li>
+<li>wget,curl一些下载工具<br>
+一个下载软件的命令行工具，使用linux下的cli（命令行）软件可以节省很多时间，就是前期入门比较麻烦。<br>
+比如我要下载dwm的透明补丁</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://dwm.suckless.org/patches/alpha/dwm-alpha-20201019-61bb8b2.diff
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>善于使用tab补全机制
+很多情况下，比如在终端里，打一部分的命令，然后使用tab键可以直接补全命令，比如输入<code>pac</code>，可以直接补全为<code>pacman</code>,在默认的shell(bash)中，如果遇到键入的命令前缀有多个匹配项，则再按一次tab会列出这些选项。<br>
+不光是命令补全，更多的用到的是补全这个文件目录下的文件名，下载的一些图片文件文件名都很长，比如需要删除某个文件，可以</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">rm &lt;文件名&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个文件名就可以不用打全，打个开头然后tab一下就可以利用补全机制</p>
+<h2 id="其他软件">其他软件</h2>
+<p>我使用的终端：Alacritty(arch下使用pacman直接安装)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo pacman -S alacritty
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>dwm里面我同样推荐的终端：
+同样c语言编写的Terminal——<code>st</code>(simple terminal)<br>
+下载源码，使用git下载源码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://git.suckless.org/st
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> st <span class="o">&amp;&amp;</span> sudo make clean install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="安装dwm">安装dwm</h2>
+<p><em><em>安装之前请先安装依赖部分</em></em></p>
+<p>官方原版</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://git.suckless.org/dwm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>没有打任何补丁，所以安装启动后是一个最基础版的dwm，但是我们喜欢折腾的总是想要好看点的效果。这些在最后面写。</p>
+<h2 id="启动dwm需要的一些配置">启动dwm需要的一些配置</h2>
+<ul>
+<li>创建<code>~/.xinitrc</code>文件</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">vim ~/.xinitrc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>并写入<code>exec dwm</code></p>
+<ul>
+<li>启动dwm<br>
+终端输入<code>startx</code></li>
+</ul>
+<h2 id="安装一些基本的软件">安装一些基本的软件</h2>
+<p>如果在之前已经安装了st，那么进入dwm后直接按<code>Alt Shift Enter</code>打开一个终端。</p>
+<ul>
+<li>安装dmenu，一个搜索软件的软件</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://git.suckless.org/dmenu
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> dmenu <span class="o">&amp;&amp;</span> sudo make clean install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>按<code>Alt p</code>启动dmenu</p>
+<h2 id="怎么为dwm打补丁">怎么为dwm打补丁</h2>
+<p>一些好看的效果和一些好用的功能都可以以打补丁的形式添加到你的dwm。
+我习惯于把补丁全部存放在<code>~/patches/</code>文件夹下，以透明补丁为例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">mkdir ~/patches &amp;&amp; cd patches
+</span></span><span class="line"><span class="cl">wget https://dwm.suckless.org/patches/alpha/dwm-alpha-20201019-61bb8b2.diff
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后进入dwm的目录，使用patch命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd ~/dwm/
+</span></span><span class="line"><span class="cl">patch &lt; ~/patches/dwm-alpha-20201019-61bb8b2.diff
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果你下载了我的<a class="link" href="https://github.com/leejkee/dwm_matebook13"  target="_blank" rel="noopener"
+    >dwm</a>，会发现我也采用了up主The CW的建议，删掉了config.def.h文件，不然打完了补丁在编译就会报错，因为补丁是修改了config.def.h,删掉了config.def.h,就会提示找不到它，让你指定这个config.def.h,直接输入config.h就可以了。</p>
+<h2 id="怎么显示状态栏">怎么显示状态栏</h2>
+<p>dwm社区提供有对应补丁，我没有选择补丁，能不打补丁就不打补丁，本人比较懒。
+dwm安装后，使用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"> xsetroot -name <span class="s2">&#34;abcd&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>右上角的dwm-6.3会变成abcd，也就是我们添加的字符
+这样我们可以写一个脚本，把需要的信息整合到一个字符串中，然后写到这个命令，同时每2s刷新一次即可完成状态栏实时显示。
+具体写法可以参考<a class="link" href="https://github.com/leejkee/scripts1"  target="_blank" rel="noopener"
+    >我的修改</a>，以及这个写法的原作者的<a class="link" href="https://github.com/joestandring/dwm-bar"  target="_blank" rel="noopener"
+    >项目</a>。我的修改版是我目前正在使用的，目前是改动了会及时同步，所以会和原版出入较大。<br>
+我只需要电池显示，亮度显示，声音显示，时间显示，所以我实际上只用到了四个脚本，如果你需要其他显示项，可以在根目录下的<code>dwm_bar.sh</code>文件中去掉对应的注释选项以打开对应选项显示。</p>
+<h2 id="和状态栏有关的">和状态栏有关的</h2>
+<p>autostart这个补丁，需要打上，以便于把一些需要开机启动的东西放在这个脚本里面，而不是<code>.xinitrc</code>文件中</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2022 指尖协奏曲
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#安装需要的依赖">安装需要的依赖</a></li>
+    <li><a href="#然后是我想啰嗦的一些">然后是我想啰嗦的一些</a></li>
+    <li><a href="#其他软件">其他软件</a></li>
+    <li><a href="#安装dwm">安装dwm</a></li>
+    <li><a href="#启动dwm需要的一些配置">启动dwm需要的一些配置</a></li>
+    <li><a href="#安装一些基本的软件">安装一些基本的软件</a></li>
+    <li><a href="#怎么为dwm打补丁">怎么为dwm打补丁</a></li>
+    <li><a href="#怎么显示状态栏">怎么显示状态栏</a></li>
+    <li><a href="#和状态栏有关的">和状态栏有关的</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
