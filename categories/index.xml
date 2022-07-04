@@ -5,7 +5,32 @@
         <link>https://leejkee.github.io/categories/</link>
         <description>Recent content in Categories on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://leejkee.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 29 Jun 2022 17:37:54 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Arch</title>
+        <link>https://leejkee.github.io/categories/arch/</link>
+        <pubDate>Wed, 29 Jun 2022 17:37:54 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/categories/arch/</guid>
+        <description>&lt;img src="https://leejkee.github.io/categories/arch/Arch.png" alt="Featured image of post Arch" /&gt;</description>
+        </item>
+        <item>
+        <title>Program Language</title>
+        <link>https://leejkee.github.io/categories/programl/</link>
+        <pubDate>Wed, 29 Jun 2022 17:29:21 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/categories/programl/</guid>
+        <description>&lt;img src="https://leejkee.github.io/categories/programl/Code.png" alt="Featured image of post Program Language" /&gt;</description>
+        </item>
+        <item>
+        <title>Debian</title>
+        <link>https://leejkee.github.io/categories/debian/</link>
+        <pubDate>Wed, 29 Jun 2022 17:23:55 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/categories/debian/</guid>
+        <description>&lt;img src="https://leejkee.github.io/categories/debian/Debian.png" alt="Featured image of post Debian" /&gt;</description>
+        </item>
+        <item>
         <title>Test</title>
         <link>https://leejkee.github.io/categories/test/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

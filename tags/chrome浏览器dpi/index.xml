@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>chrome浏览器dpi on 指尖协奏曲</title>
+        <link>https://leejkee.github.io/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/</link>
+        <description>Recent content in chrome浏览器dpi on 指尖协奏曲</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 29 Jun 2022 17:32:26 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>标签栏过小问题</title>
+        <link>https://leejkee.github.io/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
+        <pubDate>Wed, 29 Jun 2022 17:32:26 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Preface&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;  ：如果笔记本电脑的屏幕分辨率很高，而屏幕尺寸很小，比如我的Huawei Matebook13，只有13.3英寸，却是2K的分辨率，打开浏览器或者其他软件都可能会出现字体很小的情况，这是正常的，因为xrandr只能识别支持的分辨率，而不知道屏幕尺寸。&lt;/p&gt;
+&lt;p&gt;你可以选择使用xrandr调节分辨率去解决，这样会牺牲高分辨率的显示，具体方法可以看我的帖子&lt;a class=&#34;link&#34; href=&#34;https://leejkee.github.io/2022/02/05/%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E6%96%B9%E6%A1%88/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;调整分辨率&lt;/a&gt;那篇；本文介绍通过调整软件启动的dpi解决该问题，字体过小也只会出现在地址栏，因为其他的字体大小都可以通过浏览器设置调整.&lt;/p&gt;
+&lt;h2 id=&#34;firefox&#34;&gt;firefox&lt;/h2&gt;
+&lt;p&gt;地址栏输入&lt;code&gt;about:config&lt;/code&gt;，然后搜索pix，最后一行的 &lt;strong&gt;-1&lt;/strong&gt; 改为1.5或者其他的数值，1表示原始倍数显示。重新启动即可&lt;/p&gt;
+&lt;h2 id=&#34;chrome&#34;&gt;chrome&lt;/h2&gt;
+&lt;p&gt;chrome 浏览器在linux下有提供文件&lt;code&gt;chrome-flags.conf&lt;/code&gt;来设置启动选项。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vim ~/.config/chrome-flags.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在文件中加入&lt;code&gt;--force-device-scale-factor=1.5&lt;/code&gt;，这个选项代表以原来1.5倍dpi启动，也可以直接在terminal下使用&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;google-chrome-stable --force-device-scale-factor&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;1.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;启动chrome。&lt;/p&gt;
+&lt;h2 id=&#34;edge&#34;&gt;edge&lt;/h2&gt;
+&lt;p&gt;microsoft-edge没有提供flags文件，官方并没有说，也许是我没找到-_-
+按照上面chrome的方法&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;microsoft-edge-stable --force-device-scale-factor&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;1.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;为了在dwm下更方便的配合dmenu使用，我们可以把这条写进脚本，然后copy到&lt;code&gt;/usr/bin/&lt;/code&gt;下，就可以在demu中找到了。
+随便在一个目录下，我选择我放脚本的目录&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ~/scripts/browser 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vim edge-stable.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在脚本中加入以下内容:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;microsoft-edge-stable --force-device-scale-factor&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;1.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;修改文件名并复制到&lt;code&gt;/usr/bin/&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo chmod +x edge-stable.sh &lt;span class=&#34;c1&#34;&gt;# 赋予执行权限&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./edge-stable.sh &lt;span class=&#34;c1&#34;&gt;# 直接启动脚本测试打开edge后字体变大了&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mv edge-stable.sh edge-stable &lt;span class=&#34;c1&#34;&gt;# 修改文件名&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo cp edge-stable /usr/bin/ &lt;span class=&#34;c1&#34;&gt;# 复制文件到`/usr/bin/`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;此时在终端下可以直接使用&lt;code&gt;edge-stable&lt;/code&gt;打开edge，并且地址栏字体正常显示。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

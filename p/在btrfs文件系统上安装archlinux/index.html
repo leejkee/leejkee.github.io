@@ -19,7 +19,7 @@ create the subvol=@ 1 btrfs su cr /mnt/@ create the subvol=@home 1 btrfs su cr /
 create the subvol=@ 1 btrfs su cr /mnt/@ create the subvol=@home 1 btrfs su cr /mnt/@home 挂载子卷 1 2 3 4 5 6 umount /mnt mount -o noatime,space_cahche=v2,compress=zstd,ssd,discard=async,subvol=@ /dev/sda1 /mnt mkdir /mnt/home mkdir /mnt/boot mount -o noatime,space_cahche=v2,compress=zstd,ssd,discard=async,subvol=@home /dev/sda1 /mnt/home mount /dev/sda1 /mnt/boot 安装系统 1 pacstrap /mnt base linux linux-firmware btrfs-progs 这些都是需要安装的最基本的部分，包含最基本的系统，内核以及固件。'>
 <meta property='og:url' content='https://leejkee.github.io/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/'>
 <meta property='og:site_name' content='指尖协奏曲'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-06-29T17:22:21&#43;08:00'/><meta property='article:modified_time' content='2022-06-29T17:22:21&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='btrfs' /><meta property='article:tag' content='install arch linux' /><meta property='article:published_time' content='2022-06-29T17:22:21&#43;08:00'/><meta property='article:modified_time' content='2022-06-29T17:22:21&#43;08:00'/>
 <meta name="twitter:title" content="在btrfs文件系统上安装archlinux">
 <meta name="twitter:description" content="这篇记录也是我第一次正式记录archlinux安装过程的note，安装在btrfs文件系统上，是我最新尝试的内容，因为它应该是大势所趋。
 系统的安装 分区 1 gdisk /dev/sda the one is EFI partition, the another is root partition .
@@ -285,6 +285,14 @@ create the subvol=@ 1 btrfs su cr /mnt/@ create the subvol=@home 1 btrfs su cr /
     <header class="article-header">
 
     <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/arch/" style="background-color: #7f00ff; color: #fff;">
+                Arch
+            </a>
+        
+    </header>
     
 
     <div class="article-title-wrapper">
@@ -614,6 +622,14 @@ like this:</p>
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/btrfs/">btrfs</a>
+        
+            <a href="/tags/install-arch-linux/">install arch linux</a>
+        
+    </section>
+
 
     
     <section class="article-copyright">
@@ -659,6 +675,80 @@ like this:</p>
     
 
     
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">怎么样搭建lamp架构的typecho博客</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">在Arch中安装zsh并配置p10k主题和补全、高亮插件</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">关于linux中硬链接和符号链接</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/how-to-uninstall-adhesive-applications-in-android/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">How to Uninstall Adhesive Applications in Android</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">使用systemd-Boot去引导系统开机</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
 
      
     

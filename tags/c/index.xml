@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>C on 指尖协奏曲</title>
+        <link>https://leejkee.github.io/tags/c/</link>
+        <description>Recent content in C on 指尖协奏曲</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 29 Jun 2022 17:28:23 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>C中的scanf和printf</title>
+        <link>https://leejkee.github.io/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</link>
+        <pubDate>Wed, 29 Jun 2022 17:28:23 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</guid>
+        <description>&lt;h1 id=&#34;关于c的输入流&#34;&gt;关于c的输入流&lt;/h1&gt;
+&lt;h2 id=&#34;scanf和scanf_s&#34;&gt;scanf()和scanf_s()&lt;/h2&gt;
+&lt;h1 id=&#34;c的输出流&#34;&gt;c的输出流&lt;/h1&gt;
+&lt;h2 id=&#34;printf和printf_s&#34;&gt;printf()和printf_s()&lt;/h2&gt;
+&lt;p&gt;printf()和printf_s()的主要区别：printf_s()中&lt;code&gt;%n&lt;/code&gt;这个格式说明符（format speifier）是不合法的。&lt;br&gt;
+&lt;code&gt;%n&lt;/code&gt;对于的变元必须是&lt;code&gt;*int&lt;/code&gt;类型，它的作用是把字符数输入stdout。&lt;br&gt;
+eg:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;12345%ns :&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;result：12345s :5&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关于printf_s()的格式：&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;en&lt;/th&gt;
+&lt;th&gt;format specifier begin with %&lt;/th&gt;
+&lt;th&gt;flags&lt;/th&gt;
+&lt;th&gt;field_width&lt;/th&gt;
+&lt;th&gt;precision&lt;/th&gt;
+&lt;th&gt;size_flag&lt;/th&gt;
+&lt;th&gt;conversion_character&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;cn&lt;/td&gt;
+&lt;td&gt;%是格式说明符的开始标志&lt;/td&gt;
+&lt;td&gt;影响输出的标志&lt;/td&gt;
+&lt;td&gt;输出的字符宽度&lt;/td&gt;
+&lt;td&gt;精度&lt;/td&gt;
+&lt;td&gt;尺寸标记（修饰后面的格式符号）&lt;/td&gt;
+&lt;td&gt;使用的输出转换类型（格式符号）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;%&lt;/td&gt;
+&lt;td&gt;(-,+,space,#or0)&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;.n(结果保留n位小数)&lt;/td&gt;
+&lt;td&gt;(h,hh,l,ll,j,z,t,L)&lt;/td&gt;
+&lt;td&gt;(d/i,o,u,x,X,f/F,e,E,g,G,A/a,p,c,s)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;meaning&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;+:为有符号数添加符号&lt;!-- raw HTML omitted --&gt;-：输出值在输出字段中左对齐&lt;!-- raw HTML omitted --&gt;0:在输出值前面填充0至填满宽度&lt;!-- raw HTML omitted --&gt;#:在八进制输出值前面加0，十六进制数前面加0x，浮点数包含小数点&lt;!-- raw HTML omitted --&gt;space:在正数或者0前面加一个空格，而不是+号&lt;/td&gt;
+&lt;td&gt;用数字表示输出字段的宽度&lt;/td&gt;
+&lt;td&gt;常用于浮点数输出&lt;/td&gt;
+&lt;td&gt;h:表示short或unsigned short&lt;!-- raw HTML omitted --&gt;hh:signed char或unsigned char&lt;!-- raw HTML omitted --&gt;l:表示整数是long或者unsigned long&lt;!-- raw HTML omitted --&gt;ll:表示整数是long long或者unsigned long long&lt;!-- raw HTML omitted --&gt;L:long double&lt;/td&gt;
+&lt;td&gt;d/i:带符号的十进制整数&lt;!-- raw HTML omitted --&gt;o,u,x:无符号的八，十，十六进制整数&lt;!-- raw HTML omitted --&gt;X:使用大写的ABCDEF表示十六进制数，其他和x相同&lt;!-- raw HTML omitted --&gt;f/F:带符号的小数&lt;!-- raw HTML omitted --&gt;e/E:带符号和指数的小数&lt;!-- raw HTML omitted --&gt;p:指针类型&lt;!-- raw HTML omitted --&gt;c:单个字符&lt;!-- raw HTML omitted --&gt;s:一个字符串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;其中可插入转义字符：（以反斜杠\开头）&lt;br&gt;
+\b: 退格&lt;br&gt;
+\f: 换页&lt;br&gt;
+\n: 换行&lt;br&gt;
+\r: 回车，移动到当前行开头&lt;br&gt;
+\t: 水平制表符&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
