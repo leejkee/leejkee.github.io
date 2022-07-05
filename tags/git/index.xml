@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>git on 指尖协奏曲</title>
-        <link>https://leejkee.github.io/tags/git/</link>
+        <link>www.lhame.top/tags/git/</link>
         <description>Recent content in git on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:25:13 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jun 2022 17:25:13 +0800</lastBuildDate><atom:link href="www.lhame.top/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>How to Use Git</title>
-        <link>https://leejkee.github.io/p/how-to-use-git/</link>
+        <link>www.lhame.top/p/how-to-use-git/</link>
         <pubDate>Wed, 29 Jun 2022 17:25:13 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/p/how-to-use-git/</guid>
+        <guid>www.lhame.top/p/how-to-use-git/</guid>
         <description>&lt;h1 id=&#34;all-this-pages-are-about-how-to-use-__git__-a-code-manager&#34;&gt;All this pages are about how to use &lt;strong&gt;git&lt;/strong&gt;, a code manager.&lt;/h1&gt;
 &lt;h2 id=&#34;clone-a-repo-or-project&#34;&gt;clone a repo or project&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

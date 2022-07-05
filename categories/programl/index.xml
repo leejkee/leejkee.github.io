@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Program Language on 指尖协奏曲</title>
-        <link>https://leejkee.github.io/categories/programl/</link>
+        <link>www.lhame.top/categories/programl/</link>
         <description>Recent content in Program Language on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:29:21 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/categories/programl/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jun 2022 17:29:21 +0800</lastBuildDate><atom:link href="www.lhame.top/categories/programl/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>不能被重载的运算符</title>
-        <link>https://leejkee.github.io/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+        <link>www.lhame.top/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
         <pubDate>Wed, 29 Jun 2022 17:29:21 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+        <guid>www.lhame.top/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
         <description>&lt;h3 id=&#34;不能被重载的运算符只有5个&#34;&gt;不能被重载的运算符只有5个：&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;. (成员访问运算符)&lt;/li&gt;
@@ -28,10 +28,10 @@
         </item>
         <item>
         <title>C中的scanf和printf</title>
-        <link>https://leejkee.github.io/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</link>
+        <link>www.lhame.top/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</link>
         <pubDate>Wed, 29 Jun 2022 17:28:23 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</guid>
+        <guid>www.lhame.top/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</guid>
         <description>&lt;h1 id=&#34;关于c的输入流&#34;&gt;关于c的输入流&lt;/h1&gt;
 &lt;h2 id=&#34;scanf和scanf_s&#34;&gt;scanf()和scanf_s()&lt;/h2&gt;
 &lt;h1 id=&#34;c的输出流&#34;&gt;c的输出流&lt;/h1&gt;

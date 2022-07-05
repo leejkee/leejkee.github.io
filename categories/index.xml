@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 指尖协奏曲</title>
-        <link>https://leejkee.github.io/categories/</link>
+        <link>www.lhame.top/categories/</link>
         <description>Recent content in Categories on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:37:54 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 05 Jul 2022 08:02:31 +0800</lastBuildDate><atom:link href="www.lhame.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Arch</title>
-        <link>https://leejkee.github.io/categories/arch/</link>
-        <pubDate>Wed, 29 Jun 2022 17:37:54 +0800</pubDate>
+        <link>www.lhame.top/categories/arch/</link>
+        <pubDate>Tue, 05 Jul 2022 08:02:31 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/categories/arch/</guid>
-        <description>&lt;img src="https://leejkee.github.io/categories/arch/Arch.png" alt="Featured image of post Arch" /&gt;</description>
+        <guid>www.lhame.top/categories/arch/</guid>
+        <description>&lt;img src="/www.lhame.top/categories/arch/Arch.png" alt="Featured image of post Arch" /&gt;</description>
         </item>
         <item>
         <title>Program Language</title>
-        <link>https://leejkee.github.io/categories/programl/</link>
+        <link>www.lhame.top/categories/programl/</link>
         <pubDate>Wed, 29 Jun 2022 17:29:21 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/categories/programl/</guid>
-        <description>&lt;img src="https://leejkee.github.io/categories/programl/Code.png" alt="Featured image of post Program Language" /&gt;</description>
+        <guid>www.lhame.top/categories/programl/</guid>
+        <description>&lt;img src="/www.lhame.top/categories/programl/Code.png" alt="Featured image of post Program Language" /&gt;</description>
         </item>
         <item>
         <title>Debian</title>
-        <link>https://leejkee.github.io/categories/debian/</link>
+        <link>www.lhame.top/categories/debian/</link>
         <pubDate>Wed, 29 Jun 2022 17:23:55 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/categories/debian/</guid>
-        <description>&lt;img src="https://leejkee.github.io/categories/debian/Debian.png" alt="Featured image of post Debian" /&gt;</description>
+        <guid>www.lhame.top/categories/debian/</guid>
+        <description>&lt;img src="/www.lhame.top/categories/debian/Debian.png" alt="Featured image of post Debian" /&gt;</description>
         </item>
         <item>
         <title>Test</title>
-        <link>https://leejkee.github.io/categories/test/</link>
+        <link>www.lhame.top/categories/test/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://leejkee.github.io/categories/test/</guid>
-        <description>&lt;img src="https://leejkee.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        <guid>www.lhame.top/categories/test/</guid>
+        <description>&lt;img src="/www.lhame.top/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
         </item>
         
     </channel>

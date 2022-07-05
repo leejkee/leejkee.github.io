@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>virtual machine on 指尖协奏曲</title>
-        <link>https://leejkee.github.io/tags/virtual-machine/</link>
+        <link>www.lhame.top/tags/virtual-machine/</link>
         <description>Recent content in virtual machine on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:18:16 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/tags/virtual-machine/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jun 2022 17:18:16 +0800</lastBuildDate><atom:link href="www.lhame.top/tags/virtual-machine/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archlinux下使用kvm</title>
-        <link>https://leejkee.github.io/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</link>
+        <link>www.lhame.top/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</link>
         <pubDate>Wed, 29 Jun 2022 17:18:16 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</guid>
+        <guid>www.lhame.top/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</guid>
         <description>&lt;p&gt;intel支持虚拟化&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

@@ -2,240 +2,248 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on 指尖协奏曲</title>
-        <link>https://leejkee.github.io/tags/</link>
+        <link>www.lhame.top/tags/</link>
         <description>Recent content in Tags on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:37:54 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 05 Jul 2022 08:02:31 +0800</lastBuildDate><atom:link href="www.lhame.top/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>btrfs</title>
+        <link>www.lhame.top/tags/btrfs/</link>
+        <pubDate>Tue, 05 Jul 2022 08:02:31 +0800</pubDate>
+        
+        <guid>www.lhame.top/tags/btrfs/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>swapfile</title>
+        <link>www.lhame.top/tags/swapfile/</link>
+        <pubDate>Tue, 05 Jul 2022 08:02:31 +0800</pubDate>
+        
+        <guid>www.lhame.top/tags/swapfile/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>lamp</title>
-        <link>https://leejkee.github.io/tags/lamp/</link>
+        <link>www.lhame.top/tags/lamp/</link>
         <pubDate>Wed, 29 Jun 2022 17:37:54 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/lamp/</guid>
+        <guid>www.lhame.top/tags/lamp/</guid>
         <description></description>
         </item>
         <item>
         <title>typecho</title>
-        <link>https://leejkee.github.io/tags/typecho/</link>
+        <link>www.lhame.top/tags/typecho/</link>
         <pubDate>Wed, 29 Jun 2022 17:37:54 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/typecho/</guid>
+        <guid>www.lhame.top/tags/typecho/</guid>
         <description></description>
         </item>
         <item>
         <title>zsh</title>
-        <link>https://leejkee.github.io/tags/zsh/</link>
+        <link>www.lhame.top/tags/zsh/</link>
         <pubDate>Wed, 29 Jun 2022 17:37:02 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/zsh/</guid>
+        <guid>www.lhame.top/tags/zsh/</guid>
         <description></description>
         </item>
         <item>
         <title>链接</title>
-        <link>https://leejkee.github.io/tags/%E9%93%BE%E6%8E%A5/</link>
+        <link>www.lhame.top/tags/%E9%93%BE%E6%8E%A5/</link>
         <pubDate>Wed, 29 Jun 2022 17:36:32 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/%E9%93%BE%E6%8E%A5/</guid>
+        <guid>www.lhame.top/tags/%E9%93%BE%E6%8E%A5/</guid>
         <description></description>
         </item>
         <item>
         <title>adb</title>
-        <link>https://leejkee.github.io/tags/adb/</link>
+        <link>www.lhame.top/tags/adb/</link>
         <pubDate>Wed, 29 Jun 2022 17:35:58 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/adb/</guid>
+        <guid>www.lhame.top/tags/adb/</guid>
         <description></description>
         </item>
         <item>
         <title>卸载捆绑软件</title>
-        <link>https://leejkee.github.io/tags/%E5%8D%B8%E8%BD%BD%E6%8D%86%E7%BB%91%E8%BD%AF%E4%BB%B6/</link>
+        <link>www.lhame.top/tags/%E5%8D%B8%E8%BD%BD%E6%8D%86%E7%BB%91%E8%BD%AF%E4%BB%B6/</link>
         <pubDate>Wed, 29 Jun 2022 17:35:58 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/%E5%8D%B8%E8%BD%BD%E6%8D%86%E7%BB%91%E8%BD%AF%E4%BB%B6/</guid>
+        <guid>www.lhame.top/tags/%E5%8D%B8%E8%BD%BD%E6%8D%86%E7%BB%91%E8%BD%AF%E4%BB%B6/</guid>
         <description></description>
         </item>
         <item>
         <title>arch boot process</title>
-        <link>https://leejkee.github.io/tags/arch-boot-process/</link>
+        <link>www.lhame.top/tags/arch-boot-process/</link>
         <pubDate>Wed, 29 Jun 2022 17:34:42 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/arch-boot-process/</guid>
+        <guid>www.lhame.top/tags/arch-boot-process/</guid>
         <description></description>
         </item>
         <item>
         <title>systemd-boot</title>
-        <link>https://leejkee.github.io/tags/systemd-boot/</link>
+        <link>www.lhame.top/tags/systemd-boot/</link>
         <pubDate>Wed, 29 Jun 2022 17:34:42 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/systemd-boot/</guid>
+        <guid>www.lhame.top/tags/systemd-boot/</guid>
         <description></description>
         </item>
         <item>
         <title>network</title>
-        <link>https://leejkee.github.io/tags/network/</link>
+        <link>www.lhame.top/tags/network/</link>
         <pubDate>Wed, 29 Jun 2022 17:33:39 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/network/</guid>
+        <guid>www.lhame.top/tags/network/</guid>
         <description></description>
         </item>
         <item>
         <title>systemd-networkd</title>
-        <link>https://leejkee.github.io/tags/systemd-networkd/</link>
+        <link>www.lhame.top/tags/systemd-networkd/</link>
         <pubDate>Wed, 29 Jun 2022 17:33:39 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/systemd-networkd/</guid>
+        <guid>www.lhame.top/tags/systemd-networkd/</guid>
         <description></description>
         </item>
         <item>
         <title>chrome浏览器dpi</title>
-        <link>https://leejkee.github.io/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/</link>
+        <link>www.lhame.top/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/</link>
         <pubDate>Wed, 29 Jun 2022 17:32:26 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/</guid>
+        <guid>www.lhame.top/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/</guid>
         <description></description>
         </item>
         <item>
         <title>标题栏</title>
-        <link>https://leejkee.github.io/tags/%E6%A0%87%E9%A2%98%E6%A0%8F/</link>
+        <link>www.lhame.top/tags/%E6%A0%87%E9%A2%98%E6%A0%8F/</link>
         <pubDate>Wed, 29 Jun 2022 17:32:26 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/%E6%A0%87%E9%A2%98%E6%A0%8F/</guid>
+        <guid>www.lhame.top/tags/%E6%A0%87%E9%A2%98%E6%A0%8F/</guid>
         <description></description>
         </item>
         <item>
         <title>autorandr</title>
-        <link>https://leejkee.github.io/tags/autorandr/</link>
+        <link>www.lhame.top/tags/autorandr/</link>
         <pubDate>Wed, 29 Jun 2022 17:31:33 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/autorandr/</guid>
+        <guid>www.lhame.top/tags/autorandr/</guid>
         <description></description>
         </item>
         <item>
         <title>xrandr</title>
-        <link>https://leejkee.github.io/tags/xrandr/</link>
+        <link>www.lhame.top/tags/xrandr/</link>
         <pubDate>Wed, 29 Jun 2022 17:31:33 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/xrandr/</guid>
+        <guid>www.lhame.top/tags/xrandr/</guid>
         <description></description>
         </item>
         <item>
         <title>bluetooth</title>
-        <link>https://leejkee.github.io/tags/bluetooth/</link>
+        <link>www.lhame.top/tags/bluetooth/</link>
         <pubDate>Wed, 29 Jun 2022 17:30:48 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/bluetooth/</guid>
+        <guid>www.lhame.top/tags/bluetooth/</guid>
         <description></description>
         </item>
         <item>
         <title>dwm</title>
-        <link>https://leejkee.github.io/tags/dwm/</link>
+        <link>www.lhame.top/tags/dwm/</link>
         <pubDate>Wed, 29 Jun 2022 17:30:48 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/dwm/</guid>
+        <guid>www.lhame.top/tags/dwm/</guid>
         <description></description>
         </item>
         <item>
         <title>operator</title>
-        <link>https://leejkee.github.io/tags/operator/</link>
+        <link>www.lhame.top/tags/operator/</link>
         <pubDate>Wed, 29 Jun 2022 17:29:21 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/operator/</guid>
+        <guid>www.lhame.top/tags/operator/</guid>
         <description></description>
         </item>
         <item>
         <title>C</title>
-        <link>https://leejkee.github.io/tags/c/</link>
+        <link>www.lhame.top/tags/c/</link>
         <pubDate>Wed, 29 Jun 2022 17:28:23 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/c/</guid>
+        <guid>www.lhame.top/tags/c/</guid>
         <description></description>
         </item>
         <item>
         <title>scanf</title>
-        <link>https://leejkee.github.io/tags/scanf/</link>
+        <link>www.lhame.top/tags/scanf/</link>
         <pubDate>Wed, 29 Jun 2022 17:28:23 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/scanf/</guid>
+        <guid>www.lhame.top/tags/scanf/</guid>
         <description></description>
         </item>
         <item>
         <title>kvm</title>
-        <link>https://leejkee.github.io/tags/kvm/</link>
+        <link>www.lhame.top/tags/kvm/</link>
         <pubDate>Wed, 29 Jun 2022 17:27:04 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/kvm/</guid>
+        <guid>www.lhame.top/tags/kvm/</guid>
         <description></description>
         </item>
         <item>
         <title>qemu</title>
-        <link>https://leejkee.github.io/tags/qemu/</link>
+        <link>www.lhame.top/tags/qemu/</link>
         <pubDate>Wed, 29 Jun 2022 17:27:04 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/qemu/</guid>
+        <guid>www.lhame.top/tags/qemu/</guid>
         <description></description>
         </item>
         <item>
         <title>virtio-net</title>
-        <link>https://leejkee.github.io/tags/virtio-net/</link>
+        <link>www.lhame.top/tags/virtio-net/</link>
         <pubDate>Wed, 29 Jun 2022 17:27:04 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/virtio-net/</guid>
+        <guid>www.lhame.top/tags/virtio-net/</guid>
         <description></description>
         </item>
         <item>
         <title>git</title>
-        <link>https://leejkee.github.io/tags/git/</link>
+        <link>www.lhame.top/tags/git/</link>
         <pubDate>Wed, 29 Jun 2022 17:25:13 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/git/</guid>
+        <guid>www.lhame.top/tags/git/</guid>
         <description></description>
         </item>
         <item>
         <title>apache2</title>
-        <link>https://leejkee.github.io/tags/apache2/</link>
+        <link>www.lhame.top/tags/apache2/</link>
         <pubDate>Wed, 29 Jun 2022 17:23:55 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/apache2/</guid>
+        <guid>www.lhame.top/tags/apache2/</guid>
         <description></description>
         </item>
         <item>
         <title>https</title>
-        <link>https://leejkee.github.io/tags/https/</link>
+        <link>www.lhame.top/tags/https/</link>
         <pubDate>Wed, 29 Jun 2022 17:23:55 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/https/</guid>
+        <guid>www.lhame.top/tags/https/</guid>
         <description></description>
         </item>
         <item>
         <title>static ip</title>
-        <link>https://leejkee.github.io/tags/static-ip/</link>
+        <link>www.lhame.top/tags/static-ip/</link>
         <pubDate>Wed, 29 Jun 2022 17:23:11 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/static-ip/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>btrfs</title>
-        <link>https://leejkee.github.io/tags/btrfs/</link>
-        <pubDate>Wed, 29 Jun 2022 17:22:21 +0800</pubDate>
-        
-        <guid>https://leejkee.github.io/tags/btrfs/</guid>
+        <guid>www.lhame.top/tags/static-ip/</guid>
         <description></description>
         </item>
         <item>
         <title>install arch linux</title>
-        <link>https://leejkee.github.io/tags/install-arch-linux/</link>
+        <link>www.lhame.top/tags/install-arch-linux/</link>
         <pubDate>Wed, 29 Jun 2022 17:22:21 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/install-arch-linux/</guid>
+        <guid>www.lhame.top/tags/install-arch-linux/</guid>
         <description></description>
         </item>
         <item>
         <title>virtual machine</title>
-        <link>https://leejkee.github.io/tags/virtual-machine/</link>
+        <link>www.lhame.top/tags/virtual-machine/</link>
         <pubDate>Wed, 29 Jun 2022 17:18:16 +0800</pubDate>
         
-        <guid>https://leejkee.github.io/tags/virtual-machine/</guid>
+        <guid>www.lhame.top/tags/virtual-machine/</guid>
         <description></description>
         </item>
         
