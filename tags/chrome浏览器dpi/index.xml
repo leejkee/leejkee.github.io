@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>chrome浏览器dpi on 指尖协奏曲</title>
-        <link>www.lhame.top/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/</link>
+        <link>https://www.lhame.top/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/</link>
         <description>Recent content in chrome浏览器dpi on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:32:26 +0800</lastBuildDate><atom:link href="www.lhame.top/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jun 2022 17:32:26 +0800</lastBuildDate><atom:link href="https://www.lhame.top/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>标签栏过小问题</title>
-        <link>www.lhame.top/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
+        <link>https://www.lhame.top/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
         <pubDate>Wed, 29 Jun 2022 17:32:26 +0800</pubDate>
         
-        <guid>www.lhame.top/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
+        <guid>https://www.lhame.top/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
         <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Preface&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;  ：如果笔记本电脑的屏幕分辨率很高，而屏幕尺寸很小，比如我的Huawei Matebook13，只有13.3英寸，却是2K的分辨率，打开浏览器或者其他软件都可能会出现字体很小的情况，这是正常的，因为xrandr只能识别支持的分辨率，而不知道屏幕尺寸。&lt;/p&gt;
 &lt;p&gt;你可以选择使用xrandr调节分辨率去解决，这样会牺牲高分辨率的显示，具体方法可以看我的帖子&lt;a class=&#34;link&#34; href=&#34;https://leejkee.github.io/2022/02/05/%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E6%96%B9%E6%A1%88/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;调整分辨率&lt;/a&gt;那篇；本文介绍通过调整软件启动的dpi解决该问题，字体过小也只会出现在地址栏，因为其他的字体大小都可以通过浏览器设置调整.&lt;/p&gt;

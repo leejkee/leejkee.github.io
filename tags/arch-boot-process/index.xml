@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>arch boot process on 指尖协奏曲</title>
-        <link>www.lhame.top/tags/arch-boot-process/</link>
+        <link>https://www.lhame.top/tags/arch-boot-process/</link>
         <description>Recent content in arch boot process on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:34:42 +0800</lastBuildDate><atom:link href="www.lhame.top/tags/arch-boot-process/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jun 2022 17:34:42 +0800</lastBuildDate><atom:link href="https://www.lhame.top/tags/arch-boot-process/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>使用systemd-Boot去引导系统开机</title>
-        <link>www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</link>
+        <link>https://www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</link>
         <pubDate>Wed, 29 Jun 2022 17:34:42 +0800</pubDate>
         
-        <guid>www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</guid>
+        <guid>https://www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</guid>
         <description>&lt;h1 id=&#34;使用archlinux自带的systemd-boot去引导系统开机&#34;&gt;使用archlinux自带的systemd-boot去引导系统开机&lt;/h1&gt;
 &lt;p&gt;注意：下面假定你的电脑已经使用 &lt;strong&gt;grub&lt;/strong&gt; 方案，那么如何替换成 &lt;strong&gt;systemd——boot&lt;/strong&gt; 是本文记录的主要内容。如果你恰好刚刚准备在虚拟机或者你的个人PC上安装Archlinux，那么本文也将作为可参考文章；如果你是linux新手，建议先尝试ubuntu，你将很平滑地从Windows过度到GNU/linux。&lt;br&gt;
 此外，使用gpt格式是必须的，因为需要磁盘唯一标识符uuid。&lt;/p&gt;

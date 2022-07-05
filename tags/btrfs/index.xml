@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>btrfs on 指尖协奏曲</title>
-        <link>www.lhame.top/tags/btrfs/</link>
+        <link>https://www.lhame.top/tags/btrfs/</link>
         <description>Recent content in btrfs on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 05 Jul 2022 08:02:31 +0800</lastBuildDate><atom:link href="www.lhame.top/tags/btrfs/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 05 Jul 2022 08:02:31 +0800</lastBuildDate><atom:link href="https://www.lhame.top/tags/btrfs/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>在btrfs文件系统创建swapfile</title>
-        <link>www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BAswapfile/</link>
+        <link>https://www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BAswapfile/</link>
         <pubDate>Tue, 05 Jul 2022 08:02:31 +0800</pubDate>
         
-        <guid>www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BAswapfile/</guid>
+        <guid>https://www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BAswapfile/</guid>
         <description>&lt;h1 id=&#34;在btrfs文件系统上为archlinux创建swapfiles&#34;&gt;在btrfs文件系统上为archlinux创建swapfiles&lt;/h1&gt;
 &lt;h2 id=&#34;swapfile的作用&#34;&gt;swapfile的作用&lt;/h2&gt;
 &lt;ul&gt;
@@ -111,10 +111,10 @@ Swap space can be used for two purposes, to extend the virtual memory beyond the
         </item>
         <item>
         <title>在btrfs文件系统上安装archlinux</title>
-        <link>www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</link>
+        <link>https://www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</link>
         <pubDate>Wed, 29 Jun 2022 17:22:21 +0800</pubDate>
         
-        <guid>www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</guid>
+        <guid>https://www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</guid>
         <description>&lt;p&gt;这篇记录也是我第一次正式记录archlinux安装过程的note，安装在btrfs文件系统上，是我最新尝试的内容，因为它应该是大势所趋。&lt;/p&gt;
 &lt;h1 id=&#34;系统的安装&#34;&gt;系统的安装&lt;/h1&gt;
 &lt;h2 id=&#34;分区&#34;&gt;分区&lt;/h2&gt;

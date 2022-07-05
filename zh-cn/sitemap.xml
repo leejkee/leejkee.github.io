@@ -2,89 +2,89 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>www.lhame.top/zh-cn/</loc>
+    <loc>https://www.lhame.top/zh-cn/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/"
+                href="https://www.lhame.top/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="www.lhame.top/ar/"
+                href="https://www.lhame.top/ar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/"
+                href="https://www.lhame.top/zh-cn/"
                 />
   </url><url>
-    <loc>www.lhame.top/zh-cn/categories/</loc>
+    <loc>https://www.lhame.top/zh-cn/categories/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/categories/"
+                href="https://www.lhame.top/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="www.lhame.top/ar/categories/"
+                href="https://www.lhame.top/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/categories/"
+                href="https://www.lhame.top/zh-cn/categories/"
                 />
   </url><url>
-    <loc>www.lhame.top/zh-cn/p/test-chinese/</loc>
+    <loc>https://www.lhame.top/zh-cn/p/test-chinese/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/zh-cn/post/</loc>
+    <loc>https://www.lhame.top/zh-cn/post/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/post/"
+                href="https://www.lhame.top/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/post/"
+                href="https://www.lhame.top/zh-cn/post/"
                 />
   </url><url>
-    <loc>www.lhame.top/zh-cn/categories/test/</loc>
+    <loc>https://www.lhame.top/zh-cn/categories/test/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/categories/test/"
+                href="https://www.lhame.top/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/categories/test/"
+                href="https://www.lhame.top/zh-cn/categories/test/"
                 />
   </url><url>
-    <loc>www.lhame.top/zh-cn/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://www.lhame.top/zh-cn/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/zh-cn/tags/</loc>
+    <loc>https://www.lhame.top/zh-cn/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/tags/"
+                href="https://www.lhame.top/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="www.lhame.top/ar/tags/"
+                href="https://www.lhame.top/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/tags/"
+                href="https://www.lhame.top/zh-cn/tags/"
                 />
   </url>
 </urlset>

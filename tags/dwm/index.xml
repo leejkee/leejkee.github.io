@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>dwm on 指尖协奏曲</title>
-        <link>www.lhame.top/tags/dwm/</link>
+        <link>https://www.lhame.top/tags/dwm/</link>
         <description>Recent content in dwm on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:30:48 +0800</lastBuildDate><atom:link href="www.lhame.top/tags/dwm/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jun 2022 17:30:48 +0800</lastBuildDate><atom:link href="https://www.lhame.top/tags/dwm/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Dwm下使用蓝牙耳机听歌</title>
-        <link>www.lhame.top/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</link>
+        <link>https://www.lhame.top/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</link>
         <pubDate>Wed, 29 Jun 2022 17:30:48 +0800</pubDate>
         
-        <guid>www.lhame.top/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</guid>
+        <guid>https://www.lhame.top/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</guid>
         <description>&lt;p&gt;dwm不同于其他de，要使用蓝牙耳机，需要安装蓝牙协议栈以及蓝牙控制软件，并且需要额外安装&lt;code&gt;pulseaudio-bluetooth&lt;/code&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;installation&#34;&gt;installation&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -62,10 +62,10 @@
         </item>
         <item>
         <title>如何安装dwm</title>
-        <link>www.lhame.top/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</link>
+        <link>https://www.lhame.top/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</link>
         <pubDate>Wed, 29 Jun 2022 17:30:06 +0800</pubDate>
         
-        <guid>www.lhame.top/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</guid>
+        <guid>https://www.lhame.top/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</guid>
         <description>&lt;h1 id=&#34;archlinux下使用-__dwm__&#34;&gt;ArchLinux下使用 &lt;strong&gt;dwm&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;写在前面：&lt;/strong&gt;
 我想我不需要解释为什么使用dwm，有想折腾的，有觉得轻量用地很舒服的，有抱着学习一下试一试的心态去接触的&amp;hellip;&amp;hellip;总之每个人都有不同的看法，无需和其他wm或者de相互比较，大家用的开心就好。&lt;/p&gt;

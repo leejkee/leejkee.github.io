@@ -2,255 +2,255 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>www.lhame.top/</loc>
+    <loc>https://www.lhame.top/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/"
+                href="https://www.lhame.top/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="www.lhame.top/ar/"
+                href="https://www.lhame.top/ar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/"
+                href="https://www.lhame.top/"
                 />
   </url><url>
-    <loc>www.lhame.top/categories/arch/</loc>
+    <loc>https://www.lhame.top/categories/arch/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/btrfs/</loc>
+    <loc>https://www.lhame.top/tags/btrfs/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/categories/</loc>
+    <loc>https://www.lhame.top/categories/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/categories/"
+                href="https://www.lhame.top/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="www.lhame.top/ar/categories/"
+                href="https://www.lhame.top/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/categories/"
+                href="https://www.lhame.top/categories/"
                 />
   </url><url>
-    <loc>www.lhame.top/post/</loc>
+    <loc>https://www.lhame.top/post/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/post/"
+                href="https://www.lhame.top/zh-cn/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/post/"
+                href="https://www.lhame.top/post/"
                 />
   </url><url>
-    <loc>www.lhame.top/tags/swapfile/</loc>
+    <loc>https://www.lhame.top/tags/swapfile/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/</loc>
+    <loc>https://www.lhame.top/tags/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/tags/"
+                href="https://www.lhame.top/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="www.lhame.top/ar/tags/"
+                href="https://www.lhame.top/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/tags/"
+                href="https://www.lhame.top/tags/"
                 />
   </url><url>
-    <loc>www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BAswapfile/</loc>
+    <loc>https://www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BAswapfile/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/lamp/</loc>
+    <loc>https://www.lhame.top/tags/lamp/</loc>
     <lastmod>2022-06-29T17:37:54+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/typecho/</loc>
+    <loc>https://www.lhame.top/tags/typecho/</loc>
     <lastmod>2022-06-29T17:37:54+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://www.lhame.top/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2022-06-29T17:37:54+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/zsh/</loc>
+    <loc>https://www.lhame.top/tags/zsh/</loc>
     <lastmod>2022-06-29T17:37:02+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/</loc>
+    <loc>https://www.lhame.top/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2022-06-29T17:37:02+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/</loc>
+    <loc>https://www.lhame.top/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/</loc>
     <lastmod>2022-06-29T17:36:32+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/%E9%93%BE%E6%8E%A5/</loc>
+    <loc>https://www.lhame.top/tags/%E9%93%BE%E6%8E%A5/</loc>
     <lastmod>2022-06-29T17:36:32+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/adb/</loc>
+    <loc>https://www.lhame.top/tags/adb/</loc>
     <lastmod>2022-06-29T17:35:58+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/how-to-uninstall-adhesive-applications-in-android/</loc>
+    <loc>https://www.lhame.top/p/how-to-uninstall-adhesive-applications-in-android/</loc>
     <lastmod>2022-06-29T17:35:58+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/%E5%8D%B8%E8%BD%BD%E6%8D%86%E7%BB%91%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://www.lhame.top/tags/%E5%8D%B8%E8%BD%BD%E6%8D%86%E7%BB%91%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2022-06-29T17:35:58+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/arch-boot-process/</loc>
+    <loc>https://www.lhame.top/tags/arch-boot-process/</loc>
     <lastmod>2022-06-29T17:34:42+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/systemd-boot/</loc>
+    <loc>https://www.lhame.top/tags/systemd-boot/</loc>
     <lastmod>2022-06-29T17:34:42+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</loc>
+    <loc>https://www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/</loc>
     <lastmod>2022-06-29T17:34:42+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/network/</loc>
+    <loc>https://www.lhame.top/tags/network/</loc>
     <lastmod>2022-06-29T17:33:39+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/systemd-networkd/</loc>
+    <loc>https://www.lhame.top/tags/systemd-networkd/</loc>
     <lastmod>2022-06-29T17:33:39+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2022-06-29T17:33:39+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/</loc>
+    <loc>https://www.lhame.top/tags/chrome%E6%B5%8F%E8%A7%88%E5%99%A8dpi/</loc>
     <lastmod>2022-06-29T17:32:26+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://www.lhame.top/p/%E6%A0%87%E7%AD%BE%E6%A0%8F%E8%BF%87%E5%B0%8F%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2022-06-29T17:32:26+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/%E6%A0%87%E9%A2%98%E6%A0%8F/</loc>
+    <loc>https://www.lhame.top/tags/%E6%A0%87%E9%A2%98%E6%A0%8F/</loc>
     <lastmod>2022-06-29T17:32:26+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/autorandr/</loc>
+    <loc>https://www.lhame.top/tags/autorandr/</loc>
     <lastmod>2022-06-29T17:31:33+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/xrandr/</loc>
+    <loc>https://www.lhame.top/tags/xrandr/</loc>
     <lastmod>2022-06-29T17:31:33+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E4%BD%BF%E7%94%A8autorandr%E5%AE%8C%E6%88%90%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E5%90%8E%E8%87%AA%E5%8A%A8%E8%B0%83%E6%95%B4%E5%88%86%E8%BE%A8%E7%8E%87/</loc>
+    <loc>https://www.lhame.top/p/%E4%BD%BF%E7%94%A8autorandr%E5%AE%8C%E6%88%90%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E5%90%8E%E8%87%AA%E5%8A%A8%E8%B0%83%E6%95%B4%E5%88%86%E8%BE%A8%E7%8E%87/</loc>
     <lastmod>2022-06-29T17:31:33+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/bluetooth/</loc>
+    <loc>https://www.lhame.top/tags/bluetooth/</loc>
     <lastmod>2022-06-29T17:30:48+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/dwm/</loc>
+    <loc>https://www.lhame.top/tags/dwm/</loc>
     <lastmod>2022-06-29T17:30:48+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</loc>
+    <loc>https://www.lhame.top/p/dwm%E4%B8%8B%E4%BD%BF%E7%94%A8%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%90%AC%E6%AD%8C/</loc>
     <lastmod>2022-06-29T17:30:48+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</loc>
+    <loc>https://www.lhame.top/p/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85dwm/</loc>
     <lastmod>2022-06-29T17:30:06+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/operator/</loc>
+    <loc>https://www.lhame.top/tags/operator/</loc>
     <lastmod>2022-06-29T17:29:21+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/categories/programl/</loc>
+    <loc>https://www.lhame.top/categories/programl/</loc>
     <lastmod>2022-06-29T17:29:21+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
+    <loc>https://www.lhame.top/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
     <lastmod>2022-06-29T17:29:21+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/c/</loc>
+    <loc>https://www.lhame.top/tags/c/</loc>
     <lastmod>2022-06-29T17:28:23+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</loc>
+    <loc>https://www.lhame.top/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</loc>
     <lastmod>2022-06-29T17:28:23+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/scanf/</loc>
+    <loc>https://www.lhame.top/tags/scanf/</loc>
     <lastmod>2022-06-29T17:28:23+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/kvm/</loc>
+    <loc>https://www.lhame.top/tags/kvm/</loc>
     <lastmod>2022-06-29T17:27:04+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/qemu/</loc>
+    <loc>https://www.lhame.top/tags/qemu/</loc>
     <lastmod>2022-06-29T17:27:04+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/qemu%E5%BC%80%E5%90%AF%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</loc>
+    <loc>https://www.lhame.top/p/qemu%E5%BC%80%E5%90%AF%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</loc>
     <lastmod>2022-06-29T17:27:04+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/virtio-net/</loc>
+    <loc>https://www.lhame.top/tags/virtio-net/</loc>
     <lastmod>2022-06-29T17:27:04+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/git/</loc>
+    <loc>https://www.lhame.top/tags/git/</loc>
     <lastmod>2022-06-29T17:25:13+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/how-to-use-git/</loc>
+    <loc>https://www.lhame.top/p/how-to-use-git/</loc>
     <lastmod>2022-06-29T17:25:13+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/apache2/</loc>
+    <loc>https://www.lhame.top/tags/apache2/</loc>
     <lastmod>2022-06-29T17:23:55+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/categories/debian/</loc>
+    <loc>https://www.lhame.top/categories/debian/</loc>
     <lastmod>2022-06-29T17:23:55+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/debian11%E4%B8%ADapache2%E5%BC%BA%E5%88%B6%E4%BD%BF%E7%94%A8https/</loc>
+    <loc>https://www.lhame.top/p/debian11%E4%B8%ADapache2%E5%BC%BA%E5%88%B6%E4%BD%BF%E7%94%A8https/</loc>
     <lastmod>2022-06-29T17:23:55+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/https/</loc>
+    <loc>https://www.lhame.top/tags/https/</loc>
     <lastmod>2022-06-29T17:23:55+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/static-ip/</loc>
+    <loc>https://www.lhame.top/tags/static-ip/</loc>
     <lastmod>2022-06-29T17:23:11+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</loc>
+    <loc>https://www.lhame.top/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</loc>
     <lastmod>2022-06-29T17:23:11+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/install-arch-linux/</loc>
+    <loc>https://www.lhame.top/tags/install-arch-linux/</loc>
     <lastmod>2022-06-29T17:22:21+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</loc>
+    <loc>https://www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85archlinux/</loc>
     <lastmod>2022-06-29T17:22:21+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</loc>
+    <loc>https://www.lhame.top/p/archlinux%E4%B8%8B%E4%BD%BF%E7%94%A8kvm/</loc>
     <lastmod>2022-06-29T17:18:16+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/tags/virtual-machine/</loc>
+    <loc>https://www.lhame.top/tags/virtual-machine/</loc>
     <lastmod>2022-06-29T17:18:16+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/p/first/</loc>
+    <loc>https://www.lhame.top/p/first/</loc>
     <lastmod>2022-06-29T16:44:08+08:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/about/</loc>
+    <loc>https://www.lhame.top/about/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/archives/</loc>
+    <loc>https://www.lhame.top/archives/</loc>
     <lastmod>2022-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/page/</loc>
+    <loc>https://www.lhame.top/page/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>www.lhame.top/links/</loc>
+    <loc>https://www.lhame.top/links/</loc>
   </url><url>
-    <loc>www.lhame.top/search/</loc>
+    <loc>https://www.lhame.top/search/</loc>
   </url><url>
-    <loc>www.lhame.top/categories/test/</loc>
+    <loc>https://www.lhame.top/categories/test/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/categories/test/"
+                href="https://www.lhame.top/zh-cn/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/categories/test/"
+                href="https://www.lhame.top/categories/test/"
                 />
   </url>
 </urlset>

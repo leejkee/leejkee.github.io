@@ -10,9 +10,9 @@
 为file创建硬链接f 1 2 3 4 # the directory where you want to create the hard link for ~/file cd &amp;lt;dir&amp;gt; # create the link ln /home/user/file f 为file创建软链接fs 1 ln -s /home/user/file fs 我的应用 写一个一键编译并运行c程序的脚本，然后软链接到/usr/bin/下，原位置的文件修改/usr/bin/下的脚本也会被更改，便于修改
 1 2 3 4 5 6 $ cat /usr/bin/runc #!/bin/bash gcc main.c &amp;amp;&amp;amp; ./a.out $ cat scripts/runC #!/bin/bash gcc main.c &amp;amp;&amp;amp; ./a.out 1 2 3 # info of symbolic link $ ls -li /usr/bin/runc lrwxrwxrwx 1 root root /usr/bin/runc -&amp;gt; /home/lhame/scripts/runC '><title>关于linux中硬链接和符号链接</title>
 
-<link rel='canonical' href='www.lhame.top/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/'>
+<link rel='canonical' href='https://www.lhame.top/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/'>
 
-<link rel="stylesheet" href="/www.lhame.top/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='关于linux中硬链接和符号链接'>
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='关于linux中硬链接和符号链接'>
 <meta property='og:description' content='关于linux中硬链接和符号链接（软链接，Symbolic Link） 硬链接 通过索引节点链接。
 保存在磁盘中的文件会被分配一个编号，称为索引节点号。
 硬链接允许一个文件有多个有效路径名。
@@ -21,7 +21,7 @@
 使用方法 假定原文件为~/file
 为file创建硬链接f 1 2 3 4 # the directory where you want to create the hard link for ~/file cd &amp;lt;dir&amp;gt; # create the link ln /home/user/file f 为file创建软链接fs 1 ln -s /home/user/file fs 我的应用 写一个一键编译并运行c程序的脚本，然后软链接到/usr/bin/下，原位置的文件修改/usr/bin/下的脚本也会被更改，便于修改
 1 2 3 4 5 6 $ cat /usr/bin/runc #!/bin/bash gcc main.c &amp;amp;&amp;amp; ./a.out $ cat scripts/runC #!/bin/bash gcc main.c &amp;amp;&amp;amp; ./a.out 1 2 3 # info of symbolic link $ ls -li /usr/bin/runc lrwxrwxrwx 1 root root /usr/bin/runc -&amp;gt; /home/lhame/scripts/runC '>
-<meta property='og:url' content='www.lhame.top/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/'>
+<meta property='og:url' content='https://www.lhame.top/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/'>
 <meta property='og:site_name' content='指尖协奏曲'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='链接' /><meta property='article:published_time' content='2022-06-29T17:36:32&#43;08:00'/><meta property='article:modified_time' content='2022-06-29T17:36:32&#43;08:00'/>
 <meta name="twitter:title" content="关于linux中硬链接和符号链接">
@@ -70,13 +70,13 @@
         
             
             <figure class="site-avatar">
-                <a href="/www.lhame.top">
+                <a href="/">
                 
                     
                     
                     
                         
-                        <img src="/www.lhame.top/img/Peng-Yuyan_hu9f16255a9f6c8a382c2f065cba9d4ae4_45148_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/Peng-Yuyan_hu9f16255a9f6c8a382c2f065cba9d4ae4_45148_300x0_resize_q75_box.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -87,7 +87,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/www.lhame.top">指尖协奏曲</a></h1>
+            <h1 class="site-name"><a href="/">指尖协奏曲</a></h1>
             <h2 class="site-description">那就这样吧</h2>
         </div>
     </header><ol class="social-menu">
@@ -137,7 +137,7 @@
         
 
         <li >
-            <a href='/www.lhame.top/' >
+            <a href='/' >
                 
                 
                 
@@ -158,7 +158,7 @@
         
 
         <li >
-            <a href='/www.lhame.top/about/' >
+            <a href='/about/' >
                 
                 
                 
@@ -178,7 +178,7 @@
         
 
         <li >
-            <a href='/www.lhame.top/archives/' >
+            <a href='/archives/' >
                 
                 
                 
@@ -199,7 +199,7 @@
         
 
         <li >
-            <a href='/www.lhame.top/search/' >
+            <a href='/search/' >
                 
                 
                 
@@ -219,7 +219,7 @@
         
 
         <li >
-            <a href='/www.lhame.top/links/' >
+            <a href='/links/' >
                 
                 
                 
@@ -252,11 +252,11 @@
 
                     <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
                         
-                            <option value="www.lhame.top/" selected>English</option>
+                            <option value="https://www.lhame.top/" selected>English</option>
                         
-                            <option value="www.lhame.top/zh-cn/" >中文</option>
+                            <option value="https://www.lhame.top/zh-cn/" >中文</option>
                         
-                            <option value="www.lhame.top/ar/" >عربي</option>
+                            <option value="https://www.lhame.top/ar/" >عربي</option>
                         
                     </select>
                 </li>
@@ -294,7 +294,7 @@
     
     <header class="article-category">
         
-            <a href="www.lhame.top/categories/arch/" style="background-color: #7f00ff; color: #fff;">
+            <a href="/categories/arch/" style="background-color: #7f00ff; color: #fff;">
                 Arch
             </a>
         
@@ -303,7 +303,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="www.lhame.top/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/">关于linux中硬链接和符号链接</a>
+            <a href="/p/%E5%85%B3%E4%BA%8Elinux%E4%B8%AD%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/">关于linux中硬链接和符号链接</a>
         </h2>
     
         
@@ -416,7 +416,7 @@
     
     <section class="article-tags">
         
-            <a href="www.lhame.top/tags/%E9%93%BE%E6%8E%A5/">链接</a>
+            <a href="/tags/%E9%93%BE%E6%8E%A5/">链接</a>
         
     </section>
 
@@ -473,7 +473,7 @@
             
                 
 <article class="">
-    <a href="www.lhame.top/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BAswapfile/">
+    <a href="/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BAswapfile/">
         
         
 
@@ -486,7 +486,7 @@
             
                 
 <article class="">
-    <a href="www.lhame.top/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/">
+    <a href="/p/%E6%80%8E%E4%B9%88%E6%A0%B7%E6%90%AD%E5%BB%BAlamp%E6%9E%B6%E6%9E%84%E7%9A%84typecho%E5%8D%9A%E5%AE%A2/">
         
         
 
@@ -499,7 +499,7 @@
             
                 
 <article class="">
-    <a href="www.lhame.top/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/">
+    <a href="/p/%E5%9C%A8arch%E4%B8%AD%E5%AE%89%E8%A3%85zsh%E5%B9%B6%E9%85%8D%E7%BD%AEp10k%E4%B8%BB%E9%A2%98%E5%92%8C%E8%A1%A5%E5%85%A8%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6/">
         
         
 
@@ -512,7 +512,7 @@
             
                 
 <article class="">
-    <a href="www.lhame.top/p/how-to-uninstall-adhesive-applications-in-android/">
+    <a href="/p/how-to-uninstall-adhesive-applications-in-android/">
         
         
 
@@ -525,7 +525,7 @@
             
                 
 <article class="">
-    <a href="www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/">
+    <a href="/p/%E4%BD%BF%E7%94%A8systemd-boot%E5%8E%BB%E5%BC%95%E5%AF%BC%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA/">
         
         
 
@@ -679,7 +679,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/www.lhame.top/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

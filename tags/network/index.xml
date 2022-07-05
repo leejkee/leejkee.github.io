@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>network on 指尖协奏曲</title>
-        <link>www.lhame.top/tags/network/</link>
+        <link>https://www.lhame.top/tags/network/</link>
         <description>Recent content in network on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:33:39 +0800</lastBuildDate><atom:link href="www.lhame.top/tags/network/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jun 2022 17:33:39 +0800</lastBuildDate><atom:link href="https://www.lhame.top/tags/network/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>使用systemd Networkd管理网络</title>
-        <link>www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</link>
+        <link>https://www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</link>
         <pubDate>Wed, 29 Jun 2022 17:33:39 +0800</pubDate>
         
-        <guid>www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</guid>
+        <guid>https://www.lhame.top/p/%E4%BD%BF%E7%94%A8systemd-networkd%E7%AE%A1%E7%90%86%E7%BD%91%E7%BB%9C/</guid>
         <description>&lt;h1 id=&#34;archlinux使用systemd-networkd管理网络&#34;&gt;Archlinux，使用systemd-networkd管理网络&lt;/h1&gt;
 &lt;h2 id=&#34;1dhcp&#34;&gt;1、DHCP&lt;/h2&gt;
 &lt;h3 id=&#34;dhcpcd&#34;&gt;dhcpcd&lt;/h3&gt;
@@ -121,10 +121,10 @@
         </item>
         <item>
         <title>怎么在debian11中设置获取静态ip地址</title>
-        <link>www.lhame.top/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</link>
+        <link>https://www.lhame.top/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</link>
         <pubDate>Wed, 29 Jun 2022 17:23:11 +0800</pubDate>
         
-        <guid>www.lhame.top/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</guid>
+        <guid>https://www.lhame.top/p/%E6%80%8E%E4%B9%88%E5%9C%A8debian11%E4%B8%AD%E8%AE%BE%E7%BD%AE%E8%8E%B7%E5%8F%96%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80/</guid>
         <description>&lt;h1 id=&#34;怎么在debian11中设置获取静态ip地址&#34;&gt;怎么在debian11中设置获取静态ip地址&lt;/h1&gt;
 &lt;p&gt;如果你的电脑拥有以太网卡，你需要选择以下两种方法之一为其配置ip，这样电脑才能上网。&lt;/p&gt;
 &lt;p&gt;1、最简单的方法就是使用动态主机配置协议DHCP(Dynamic Host Configuration Protocol)进行动态配置，他需要在局域网中有一个DHCP服务器，它可能提示需要主机名，对应的设置如下。然后DHCP服务器才会向主机发送合适的网络配置。&lt;/p&gt;

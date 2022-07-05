@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 指尖协奏曲</title>
-        <link>www.lhame.top/categories/</link>
+        <link>https://www.lhame.top/categories/</link>
         <description>Recent content in Categories on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 05 Jul 2022 08:02:31 +0800</lastBuildDate><atom:link href="www.lhame.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 05 Jul 2022 08:02:31 +0800</lastBuildDate><atom:link href="https://www.lhame.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Arch</title>
-        <link>www.lhame.top/categories/arch/</link>
+        <link>https://www.lhame.top/categories/arch/</link>
         <pubDate>Tue, 05 Jul 2022 08:02:31 +0800</pubDate>
         
-        <guid>www.lhame.top/categories/arch/</guid>
-        <description>&lt;img src="/www.lhame.top/categories/arch/Arch.png" alt="Featured image of post Arch" /&gt;</description>
+        <guid>https://www.lhame.top/categories/arch/</guid>
+        <description>&lt;img src="https://www.lhame.top/categories/arch/Arch.png" alt="Featured image of post Arch" /&gt;</description>
         </item>
         <item>
         <title>Program Language</title>
-        <link>www.lhame.top/categories/programl/</link>
+        <link>https://www.lhame.top/categories/programl/</link>
         <pubDate>Wed, 29 Jun 2022 17:29:21 +0800</pubDate>
         
-        <guid>www.lhame.top/categories/programl/</guid>
-        <description>&lt;img src="/www.lhame.top/categories/programl/Code.png" alt="Featured image of post Program Language" /&gt;</description>
+        <guid>https://www.lhame.top/categories/programl/</guid>
+        <description>&lt;img src="https://www.lhame.top/categories/programl/Code.png" alt="Featured image of post Program Language" /&gt;</description>
         </item>
         <item>
         <title>Debian</title>
-        <link>www.lhame.top/categories/debian/</link>
+        <link>https://www.lhame.top/categories/debian/</link>
         <pubDate>Wed, 29 Jun 2022 17:23:55 +0800</pubDate>
         
-        <guid>www.lhame.top/categories/debian/</guid>
-        <description>&lt;img src="/www.lhame.top/categories/debian/Debian.png" alt="Featured image of post Debian" /&gt;</description>
+        <guid>https://www.lhame.top/categories/debian/</guid>
+        <description>&lt;img src="https://www.lhame.top/categories/debian/Debian.png" alt="Featured image of post Debian" /&gt;</description>
         </item>
         <item>
         <title>Test</title>
-        <link>www.lhame.top/categories/test/</link>
+        <link>https://www.lhame.top/categories/test/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>www.lhame.top/categories/test/</guid>
-        <description>&lt;img src="/www.lhame.top/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        <guid>https://www.lhame.top/categories/test/</guid>
+        <description>&lt;img src="https://www.lhame.top/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
         </item>
         
     </channel>

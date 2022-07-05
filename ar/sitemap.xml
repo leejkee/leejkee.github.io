@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>www.lhame.top/ar/categories/</loc>
+    <loc>https://www.lhame.top/ar/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/categories/"
+                href="https://www.lhame.top/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/categories/"
+                href="https://www.lhame.top/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="www.lhame.top/ar/categories/"
+                href="https://www.lhame.top/ar/categories/"
                 />
   </url><url>
-    <loc>www.lhame.top/ar/tags/</loc>
+    <loc>https://www.lhame.top/ar/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/tags/"
+                href="https://www.lhame.top/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/tags/"
+                href="https://www.lhame.top/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="www.lhame.top/ar/tags/"
+                href="https://www.lhame.top/ar/tags/"
                 />
   </url><url>
-    <loc>www.lhame.top/ar/</loc>
+    <loc>https://www.lhame.top/ar/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.lhame.top/"
+                href="https://www.lhame.top/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="www.lhame.top/zh-cn/"
+                href="https://www.lhame.top/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="www.lhame.top/ar/"
+                href="https://www.lhame.top/ar/"
                 />
   </url>
 </urlset>

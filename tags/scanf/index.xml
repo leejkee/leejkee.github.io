@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>scanf on 指尖协奏曲</title>
-        <link>www.lhame.top/tags/scanf/</link>
+        <link>https://www.lhame.top/tags/scanf/</link>
         <description>Recent content in scanf on 指尖协奏曲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jun 2022 17:28:23 +0800</lastBuildDate><atom:link href="www.lhame.top/tags/scanf/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jun 2022 17:28:23 +0800</lastBuildDate><atom:link href="https://www.lhame.top/tags/scanf/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>C中的scanf和printf</title>
-        <link>www.lhame.top/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</link>
+        <link>https://www.lhame.top/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</link>
         <pubDate>Wed, 29 Jun 2022 17:28:23 +0800</pubDate>
         
-        <guid>www.lhame.top/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</guid>
+        <guid>https://www.lhame.top/p/c%E4%B8%AD%E7%9A%84scanf%E5%92%8Cprintf/</guid>
         <description>&lt;h1 id=&#34;关于c的输入流&#34;&gt;关于c的输入流&lt;/h1&gt;
 &lt;h2 id=&#34;scanf和scanf_s&#34;&gt;scanf()和scanf_s()&lt;/h2&gt;
 &lt;h1 id=&#34;c的输出流&#34;&gt;c的输出流&lt;/h1&gt;
