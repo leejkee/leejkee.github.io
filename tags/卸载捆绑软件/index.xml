@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>卸载捆绑软件 on ABing&#39;s Blog</title>
+        <link>https://leejkee.github.io/tags/%E5%8D%B8%E8%BD%BD%E6%8D%86%E7%BB%91%E8%BD%AF%E4%BB%B6/</link>
+        <description>Recent content in 卸载捆绑软件 on ABing&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 29 Jun 2022 17:35:58 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/tags/%E5%8D%B8%E8%BD%BD%E6%8D%86%E7%BB%91%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How to Uninstall Adhesive Applications in Android</title>
+        <link>https://leejkee.github.io/p/how-to-uninstall-adhesive-applications-in-android/</link>
+        <pubDate>Wed, 29 Jun 2022 17:35:58 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/p/how-to-uninstall-adhesive-applications-in-android/</guid>
+        <description>&lt;p&gt;lastest update: 2023-1-6
+&lt;font color=green&gt;Preface:&lt;/font&gt;&lt;/b&gt;Some applications called &amp;ldquo;XiaomiStore&amp;rdquo;, we can&amp;rsquo;t remove it from our smartphone. The &amp;ldquo;adb&amp;rdquo;(Android Debug Bridge) will make it.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;em&gt;&lt;font color=red&gt;Tips: &lt;/font&gt;&lt;/b&gt;This is my first blog in English, whose mistakes could be sent to &lt;code&gt;cww.lhame@foxmail.com&lt;/code&gt;.&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;firstly-download-adb-in-windows10&#34;&gt;Firstly, download adb in windows10.&lt;/h1&gt;
+&lt;p&gt;Visit this &lt;a class=&#34;link&#34; href=&#34;https://dl.google.com/android/repository/platform-tools_r33.0.1-windows.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;page&lt;/a&gt;, and download it.(Recommended in &lt;code&gt;C:\Users\ _*usename*_ \adb&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\adb&lt;/code&gt; is a directory created by yourself, you will get a &amp;ldquo;zip flie&amp;rdquo; called &lt;code&gt;platform-tools_r33.0.1-windows.zip&lt;/code&gt; if you click the link above.&lt;/p&gt;
+&lt;p&gt;Then you should extract it to this path, the final directory is like &lt;code&gt;C:\Users\LHame\adb\platform-tools&lt;/code&gt;, where you can find the file &lt;code&gt;adb.exe&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;then-add-it-to-environment-variable&#34;&gt;Then, add it to environment variable.&lt;/h1&gt;
+&lt;p&gt;On Windows, just follow these steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Copy the path you save the &lt;code&gt;platform-tools&lt;/code&gt;, such as &lt;code&gt;C:\Users\LHame\adb\platform-tools&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Right click &lt;code&gt;This computer&lt;/code&gt;, chose &lt;code&gt;properties&lt;/code&gt;(How to do for the disappear of my &lt;code&gt;This computer&lt;/code&gt;? Right click on your desktop and chose the &lt;code&gt;Personalize&lt;/code&gt;, &lt;code&gt;themes&lt;/code&gt; on the left, &lt;code&gt;Desktop Icons Settings&lt;/code&gt; upper right, ✔ the &lt;code&gt;computer&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;Advanced system settings&lt;/code&gt; on the right&lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;environment variable&lt;/code&gt; on the bottom&lt;/li&gt;
+&lt;li&gt;Chose the &lt;code&gt;path&lt;/code&gt; in the &lt;code&gt;system variable&lt;/code&gt;, then click &lt;code&gt;new&lt;/code&gt;, &lt;code&gt;add&lt;/code&gt;, paste what you copy before&lt;/li&gt;
+&lt;li&gt;Finally, click the &lt;code&gt;OK&lt;/code&gt; to save changes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;check-if-the-adb-is-ok&#34;&gt;Check if the adb is OK.&lt;/h1&gt;
+&lt;p&gt;Open a terminal, a software we can do some interesting jobs with it, which can be installed by serching words including &amp;ldquo;terminal&amp;rdquo; in Microsoft Store. What&amp;rsquo;s more, you can chose press &lt;code&gt;Win&lt;/code&gt; + &lt;code&gt;R&lt;/code&gt; in keyboard to open the &lt;code&gt;CMD&lt;/code&gt;, alse called &lt;code&gt;command prompt&lt;/code&gt;.&lt;br&gt;
+Then ,type &lt;code&gt;adb version&lt;/code&gt; and you should get some messages like here:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PS C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\L&lt;/span&gt;Hame&amp;gt; adb version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Android Debug Bridge version 1.0.41
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Version 33.0.1-8253317
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Installed as C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\L&lt;/span&gt;Hame&lt;span class=&#34;se&#34;&gt;\a&lt;/span&gt;db&lt;span class=&#34;se&#34;&gt;\p&lt;/span&gt;latform-tools&lt;span class=&#34;se&#34;&gt;\a&lt;/span&gt;db.exe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;changes-for-your-smartphone&#34;&gt;changes for your smartphone&lt;/h1&gt;
+&lt;p&gt;This &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/429854110&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;page&lt;/a&gt; will tell you how to do.&lt;br&gt;
+(Emmmm, I am a lazy boy, so I just link a post from Bing. Also many posts about how to unlock the USB-debug options for your mobile can be found. )&lt;/p&gt;
+&lt;p&gt;Now, evething is OK.&lt;/p&gt;
+&lt;h1 id=&#34;get-start&#34;&gt;Get start.&lt;/h1&gt;
+&lt;p&gt;Type &lt;code&gt;adb devices&lt;/code&gt; to list the infomation your smartphone, your will get message as:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PS C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\L&lt;/span&gt;Hame&amp;gt; adb devices
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;List of devices attached
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xxxxxxxx        device
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;You can not make sure your mobile is OK until you have gotten the code of your device.(must be a number)&lt;/p&gt;
+&lt;h2 id=&#34;list-the-applications&#34;&gt;list the applications&lt;/h2&gt;
+&lt;p&gt;Type&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell pm list packages
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;for example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PS C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\L&lt;/span&gt;Hame&amp;gt; adb shell pm list packages
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.miui.screenrecorder
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.qualcomm.qti.haven.telemetry.service
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.cts.priv.ctsshim
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.qualcomm.qti.auth.sampleextauthservice
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.qualcomm.qti.perfdump
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.providers.telephony
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.miui.powerkeeper
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.miui.qr
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.mi.liveassistant
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:org.codeaurora.bt_wipowersdk
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.providers.calendar
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.providers.media
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.milink.service
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.qti.service.colorservice
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.xiaomi.powerchecker
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.xiaomi.account
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.wallpapercropper
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.quicinc.cne.CNEService
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.qualcomm.qti.autoregistration
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.xiaomi.micloud.sdk
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.qualcomm.qti.smcinvokepkgmgr
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.updater
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.leiting.xian
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.documentsui
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.externalstorage
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.qualcomm.uimremoteclient
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.xiaomi.gamecenter.sdk.service
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.htmlviewer
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.qualcomm.svi
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.qualcomm.qti.uceShimService
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.companiondevicemanager
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.miui.gallery
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.quicksearchbox
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.mms.service
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.android.providers.downloads
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.qualcomm.qti.auth.sampleauthenticatorservice
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;package:com.xiaomi.payment
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;......
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;......
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;uninstall-what-you-want-to-remove&#34;&gt;uninstall what you want to remove&lt;/h2&gt;
+&lt;p&gt;Type&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell pm uninstall --user &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; &amp;lt;apps name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;for example:
+I want to remove a application called &amp;ldquo;XiaomiPayment&amp;rdquo;, we can find it from above list.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PS C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\L&lt;/span&gt;Hame&amp;gt; adb shell pm uninstall --user &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; com.xiaomi.payment
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Success
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The app was uninstalled if you got &amp;ldquo;Success&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Of course, you shouldn&amp;rsquo;t remove some important packages(apps) for the Android.(You can get detials by Bing and Google.)&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

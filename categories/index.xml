@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on ABing&#39;s Blog</title>
+        <link>https://leejkee.github.io/categories/</link>
+        <description>Recent content in Categories on ABing&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 05 Jul 2022 08:02:31 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Arch</title>
+        <link>https://leejkee.github.io/categories/arch/</link>
+        <pubDate>Tue, 05 Jul 2022 08:02:31 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/categories/arch/</guid>
+        <description>&lt;img src="https://leejkee.github.io/categories/arch/arch.png" alt="Featured image of post Arch" /&gt;</description>
+        </item>
+        <item>
+        <title>Program Language</title>
+        <link>https://leejkee.github.io/categories/programl/</link>
+        <pubDate>Wed, 29 Jun 2022 17:29:21 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/categories/programl/</guid>
+        <description>&lt;img src="https://leejkee.github.io/categories/programl/Code.png" alt="Featured image of post Program Language" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>operator on ABing&#39;s Blog</title>
+        <link>https://leejkee.github.io/tags/operator/</link>
+        <description>Recent content in operator on ABing&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 29 Jun 2022 17:29:21 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/tags/operator/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>不能被重载的运算符</title>
+        <link>https://leejkee.github.io/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+        <pubDate>Wed, 29 Jun 2022 17:29:21 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+        <description>&lt;h3 id=&#34;不能被重载的运算符只有5个&#34;&gt;不能被重载的运算符只有5个：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;. (成员访问运算符)&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;(成员指针访问运算符)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;:: (域运算符)&lt;/li&gt;
+&lt;li&gt;sizeof (长度运算符)&lt;/li&gt;
+&lt;li&gt;?: (条件运算符)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
