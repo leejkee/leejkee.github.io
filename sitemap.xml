@@ -3,7 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://leejkee.github.io/</loc>
-    <lastmod>2022-07-05T08:02:31+08:00</lastmod>
+    <lastmod>2023-09-10T12:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://leejkee.github.io/categories/</loc>
+    <lastmod>2023-09-10T12:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://leejkee.github.io/tags/hugo/</loc>
+    <lastmod>2023-09-10T12:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/</loc>
+    <lastmod>2023-09-10T12:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://leejkee.github.io/tags/linux/</loc>
+    <lastmod>2023-09-10T12:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://leejkee.github.io/categories/others/</loc>
+    <lastmod>2023-09-10T12:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://leejkee.github.io/post/</loc>
+    <lastmod>2023-09-10T12:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://leejkee.github.io/tags/stack-theme-hugo/</loc>
+    <lastmod>2023-09-10T12:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://leejkee.github.io/tags/</loc>
+    <lastmod>2023-09-10T12:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://leejkee.github.io/tags/windows/</loc>
+    <lastmod>2023-09-10T12:42:58+08:00</lastmod>
   </url><url>
     <loc>https://leejkee.github.io/categories/arch/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
@@ -11,16 +38,7 @@
     <loc>https://leejkee.github.io/tags/btrfs/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
   </url><url>
-    <loc>https://leejkee.github.io/categories/</loc>
-    <lastmod>2022-07-05T08:02:31+08:00</lastmod>
-  </url><url>
-    <loc>https://leejkee.github.io/post/</loc>
-    <lastmod>2022-07-05T08:02:31+08:00</lastmod>
-  </url><url>
     <loc>https://leejkee.github.io/tags/swapfile/</loc>
-    <lastmod>2022-07-05T08:02:31+08:00</lastmod>
-  </url><url>
-    <loc>https://leejkee.github.io/tags/</loc>
     <lastmod>2022-07-05T08:02:31+08:00</lastmod>
   </url><url>
     <loc>https://leejkee.github.io/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BAswapfile/</loc>
@@ -107,7 +125,7 @@
     <loc>https://leejkee.github.io/tags/operator/</loc>
     <lastmod>2022-06-29T17:29:21+08:00</lastmod>
   </url><url>
-    <loc>https://leejkee.github.io/categories/programl/</loc>
+    <loc>https://leejkee.github.io/categories/cpp/</loc>
     <lastmod>2022-06-29T17:29:21+08:00</lastmod>
   </url><url>
     <loc>https://leejkee.github.io/p/%E4%B8%8D%E8%83%BD%E8%A2%AB%E9%87%8D%E8%BD%BD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
@@ -166,9 +184,6 @@
   </url><url>
     <loc>https://leejkee.github.io/tags/virtual-machine/</loc>
     <lastmod>2022-06-29T17:18:16+08:00</lastmod>
-  </url><url>
-    <loc>https://leejkee.github.io/p/first/</loc>
-    <lastmod>2022-06-29T16:44:08+08:00</lastmod>
   </url><url>
     <loc>https://leejkee.github.io/about/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>

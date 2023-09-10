@@ -374,8 +374,8 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ln -s /home/user/file fs
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="我的应用">我的应用</h1>
-<p>写一个一键编译并运行c程序的脚本，然后软链接到/usr/bin/下，原位置的文件修改/usr/bin/下的脚本也会被更改，便于修改</p>
+</div><h1 id="应用">应用</h1>
+<p>写一个一键编译并运行c程序的脚本，然后软链接到/usr/bin/下，只需要修改scripts下的脚本就可以做到同步修改，删除文件链接失效</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -384,11 +384,13 @@
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ cat /usr/bin/runc                                                  
 </span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash</span>
 </span></span><span class="line"><span class="cl">gcc main.c <span class="o">&amp;&amp;</span> ./a.out
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ cat scripts/runC                                                   
 </span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash</span>
 </span></span><span class="line"><span class="cl">gcc main.c <span class="o">&amp;&amp;</span> ./a.out
@@ -406,7 +408,8 @@
 </span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root /usr/bin/runc -&gt; /home/lhame/scripts/runC
 </span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><p>实际中这种方法不可取，这里只是举例</p>
+
 </section>
 
 

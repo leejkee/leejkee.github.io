@@ -6,7 +6,164 @@
         <description>Recent content in Posts on ABing&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 05 Jul 2022 08:02:31 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 10 Sep 2023 12:42:58 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo重启 迁移博客 静态Blog Stack主题</title>
+        <link>https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/</link>
+        <pubDate>Sun, 10 Sep 2023 12:42:58 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/</guid>
+        <description>&lt;p&gt;本人对于前端几乎没有任何基础。&lt;br&gt;
+这里主要记录一次Hugo博客重启的记录，使用的主题是Stack，理由（配置简单，功能齐全，文档较为友好）&lt;br&gt;
+主要内容包含以下几点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hugo在archlinux上的安装&lt;/li&gt;
+&lt;li&gt;hugo的启动，stack主题的安装&lt;/li&gt;
+&lt;li&gt;一些基本的新建，build，推送操作&lt;/li&gt;
+&lt;li&gt;hugo从linux迁移到windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hugo在archlinux上的安装&#34;&gt;hugo在archlinux上的安装&lt;/h3&gt;
+&lt;p&gt;直接使用pacman安装即可&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo pacman -Sy hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其他发行版使用对应的包管理器安装即可&lt;/p&gt;
+&lt;h3 id=&#34;hugo的启动stack主题安装&#34;&gt;hugo的启动，stack主题安装&lt;/h3&gt;
+&lt;p&gt;可以直接参考&lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/doc/overview/quickstart/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo官方教程&lt;/a&gt;&lt;br&gt;
+新建一个你放hugo博客的文件夹，然后进入，这里是在用户目录下的HugoBlog文件夹下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new ~/HugoBlog
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ~/HugoBlog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;安装主题stack&#34;&gt;安装主题stack&lt;/h4&gt;
+&lt;p&gt;我选择submodule的方式安装，就是在HugoBlog新建一个git仓库&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;网络不好可以替换到gitee，其他方法参考&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/guide/getting-started&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stack官方&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;修改一些配置&#34;&gt;修改一些配置&lt;/h4&gt;
+&lt;p&gt;下载stack的内容后，可以选择直接修改theme文件夹下的stack主题的内容，我选择修改本地的文件，一些不需要修改的文件就留在stack主题文件夹里面，需要修改的部分就复制一份到HugoBlog（站点根目录）&lt;br&gt;
+这里我们只复制archetypes文件夹下的内容到跟目录下的archetypes文件夹&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp themes/hugo-theme-stack/archetypes/* ./archetypes/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;复制官方示例网站的config&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack-starter/tree/master/config/_default&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;配置文件&lt;/a&gt;，直接把文件拷贝到本地&lt;code&gt;HugoBlog/config/_default/&lt;/code&gt;，我这里是全部转为了yaml，也可以直接使用toml。&lt;br&gt;
+配置好之后如图所示：
+&lt;img src=&#34;https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/config.png&#34;
+	width=&#34;1062&#34;
+	height=&#34;487&#34;
+	srcset=&#34;https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/config_hu6ba4793fd21ec0cdbadaa2911963abb7_66541_480x0_resize_box_3.png 480w, https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/config_hu6ba4793fd21ec0cdbadaa2911963abb7_66541_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;218&#34;
+		data-flex-basis=&#34;523px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;简单提一下，修改网页的标题啥的在config.yaml里面修改，并且加入&lt;code&gt;theme: hugo-theme-stack&lt;/code&gt;启用主题，根目录下的hugo.toml可以直接删掉&lt;br&gt;
+还有一些头像，标签什么的在param.yaml文件里面设置&lt;/p&gt;
+&lt;h4 id=&#34;图片文件的说明&#34;&gt;图片文件的说明&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;配置config文件夹里面的yaml文件用的图片
+&lt;ul&gt;
+&lt;li&gt;params.yaml中的favicon用的图片放在根目录的static文件夹&lt;/li&gt;
+&lt;li&gt;其他的yaml用的图片先在根目录的assets文件夹找，找不到的去theme主题文件夹里面的assets文件夹找&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;写文章的markdown文件中插图全部放在文章所在目录即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;stack主题包含的主要内容&#34;&gt;stack主题包含的主要内容&lt;/h4&gt;
+&lt;p&gt;在content文件夹下有以下内容：&lt;br&gt;
+（官方&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack-starter/tree/master/content/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;content文件&lt;/a&gt;）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;categories 写分类页面，即点击主页的archive会跳转到一个分类好的页面，下面是文章目录，参考&lt;a class=&#34;link&#34; href=&#34;https://demo.stack.jimmycai.com/archives/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官方页面&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;page 每个文件夹对应一个小组件&lt;br&gt;
+&lt;img src=&#34;https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/page.png&#34;
+	width=&#34;265&#34;
+	height=&#34;231&#34;
+	srcset=&#34;https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/page_hu1d9aaca936d3a20a701a8431b7b6bb73_4946_480x0_resize_box_3.png 480w, https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/page_hu1d9aaca936d3a20a701a8431b7b6bb73_4946_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;114&#34;
+		data-flex-basis=&#34;275px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;post 放自己的markdown文章的地方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;新建文章build推送&#34;&gt;新建文章，Build，推送&lt;/h3&gt;
+&lt;h4 id=&#34;新建&#34;&gt;新建&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new post/分类文件夹/文章.md &lt;span class=&#34;c1&#34;&gt;# 使用的是archetypes文件夹中的default模板&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;新建分类&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new categories/分类文件夹/_index.md &lt;span class=&#34;c1&#34;&gt;# 使用的是archetypes文件夹中的categories模板&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;新简小组件page同理。&lt;/p&gt;
+&lt;p&gt;写好分类信息，标签信息，标题即可&lt;/p&gt;
+&lt;h4 id=&#34;build&#34;&gt;Build&lt;/h4&gt;
+&lt;p&gt;就是把markdown文件转换为可以显示的网页
+直接运行&lt;code&gt;hugo&lt;/code&gt;即可&lt;/p&gt;
+&lt;h4 id=&#34;推送&#34;&gt;推送&lt;/h4&gt;
+&lt;p&gt;生成的文件在public文件夹下，进入public文件夹并新建git参考，关联到远程的github.io仓库即可，然后git push即可&lt;/p&gt;
+&lt;h3 id=&#34;从linux迁移到windows&#34;&gt;从linux迁移到windows&lt;/h3&gt;
+&lt;h4 id=&#34;windows安装hugo&#34;&gt;Windows安装hugo&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;去官方github下载release的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases/download/v0.118.2/hugo_extended_0.118.2_windows-amd64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo压缩包&lt;/a&gt;
+注意下载extended版本，stack主题需求&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解压到&lt;code&gt;D:/Hugo/bin&lt;/code&gt;，并将该bin路径添加到环境变量path&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在Hugo目录下新建&lt;code&gt;Site&lt;/code&gt;文件夹作为网页根目录，将Linux下的根目录文件全部复制过来即可，本人是从虚拟机迁移到宿主机，后续会将根站点一并推到git仓库，更方便修改更新迁移&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>在btrfs文件系统创建swapfile</title>
         <link>https://leejkee.github.io/p/%E5%9C%A8btrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BAswapfile/</link>
         <pubDate>Tue, 05 Jul 2022 08:02:31 +0800</pubDate>
@@ -740,8 +897,8 @@ Typecho is a light and efficient website frame.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ln -s /home/user/file fs
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;我的应用&#34;&gt;我的应用&lt;/h1&gt;
-&lt;p&gt;写一个一键编译并运行c程序的脚本，然后软链接到/usr/bin/下，原位置的文件修改/usr/bin/下的脚本也会被更改，便于修改&lt;/p&gt;
+&lt;/div&gt;&lt;h1 id=&#34;应用&#34;&gt;应用&lt;/h1&gt;
+&lt;p&gt;写一个一键编译并运行c程序的脚本，然后软链接到/usr/bin/下，只需要修改scripts下的脚本就可以做到同步修改，删除文件链接失效&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -750,11 +907,13 @@ Typecho is a light and efficient website frame.&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ cat /usr/bin/runc                                                  
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#!/bin/bash&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gcc main.c &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./a.out
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ cat scripts/runC                                                   
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#!/bin/bash&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gcc main.c &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./a.out
@@ -772,7 +931,8 @@ Typecho is a light and efficient website frame.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;lrwxrwxrwx &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; root root /usr/bin/runc -&amp;gt; /home/lhame/scripts/runC
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;p&gt;实际中这种方法不可取，这里只是举例&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>How to Uninstall Adhesive Applications in Android</title>
@@ -787,12 +947,12 @@ Typecho is a light and efficient website frame.&lt;/p&gt;
 &lt;p&gt;Visit this &lt;a class=&#34;link&#34; href=&#34;https://dl.google.com/android/repository/platform-tools_r33.0.1-windows.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;page&lt;/a&gt;, and download it.(Recommended in &lt;code&gt;C:\Users\ _*usename*_ \adb&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\adb&lt;/code&gt; is a directory created by yourself, you will get a &amp;ldquo;zip flie&amp;rdquo; called &lt;code&gt;platform-tools_r33.0.1-windows.zip&lt;/code&gt; if you click the link above.&lt;/p&gt;
-&lt;p&gt;Then you should extract it to this path, the final directory is like &lt;code&gt;C:\Users\LHame\adb\platform-tools&lt;/code&gt;, where you can find the file &lt;code&gt;adb.exe&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then you should unzip it in this path, the directory should be like &lt;code&gt;C:\Users\LHame\adb\platform-tools&lt;/code&gt;, where you can find the file &lt;code&gt;adb.exe&lt;/code&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;then-add-it-to-environment-variable&#34;&gt;Then, add it to environment variable.&lt;/h1&gt;
 &lt;p&gt;On Windows, just follow these steps:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Copy the path you save the &lt;code&gt;platform-tools&lt;/code&gt;, such as &lt;code&gt;C:\Users\LHame\adb\platform-tools&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Right click &lt;code&gt;This computer&lt;/code&gt;, chose &lt;code&gt;properties&lt;/code&gt;(How to do for the disappear of my &lt;code&gt;This computer&lt;/code&gt;? Right click on your desktop and chose the &lt;code&gt;Personalize&lt;/code&gt;, &lt;code&gt;themes&lt;/code&gt; on the left, &lt;code&gt;Desktop Icons Settings&lt;/code&gt; upper right, ✔ the &lt;code&gt;computer&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Copy the path where you have saved the &lt;code&gt;platform-tools&lt;/code&gt;, for example &lt;code&gt;C:\Users\LHame\adb\platform-tools&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Right click &lt;code&gt;This computer&lt;/code&gt;, chose &lt;code&gt;properties&lt;/code&gt;(No &lt;code&gt;This computer&lt;/code&gt; in your Desktop? Just right click on your desktop and chose the &lt;code&gt;Personalize&lt;/code&gt;, &lt;code&gt;themes&lt;/code&gt; on the left, &lt;code&gt;Desktop Icons Settings&lt;/code&gt; upper right, chose the &lt;code&gt;computer&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;Click &lt;code&gt;Advanced system settings&lt;/code&gt; on the right&lt;/li&gt;
 &lt;li&gt;Click &lt;code&gt;environment variable&lt;/code&gt; on the bottom&lt;/li&gt;
 &lt;li&gt;Chose the &lt;code&gt;path&lt;/code&gt; in the &lt;code&gt;system variable&lt;/code&gt;, then click &lt;code&gt;new&lt;/code&gt;, &lt;code&gt;add&lt;/code&gt;, paste what you copy before&lt;/li&gt;
@@ -818,7 +978,7 @@ Then ,type &lt;code&gt;adb version&lt;/code&gt; and you should get some messages
 &lt;/div&gt;&lt;h1 id=&#34;changes-for-your-smartphone&#34;&gt;changes for your smartphone&lt;/h1&gt;
 &lt;p&gt;This &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/429854110&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;page&lt;/a&gt; will tell you how to do.&lt;br&gt;
-(Emmmm, I am a lazy boy, so I just link a post from Bing. Also many posts about how to unlock the USB-debug options for your mobile can be found. )&lt;/p&gt;
+(Emmmm, I am a lazy boy, so I just link a post from Bing. Also many posts about how to unlock the USB-debug options for your mobile can be found by Bing. )&lt;/p&gt;
 &lt;p&gt;Now, evething is OK.&lt;/p&gt;
 &lt;h1 id=&#34;get-start&#34;&gt;Get start.&lt;/h1&gt;
 &lt;p&gt;Type &lt;code&gt;adb devices&lt;/code&gt; to list the infomation your smartphone, your will get message as:&lt;/p&gt;
@@ -954,8 +1114,8 @@ I want to remove a application called &amp;ldquo;XiaomiPayment&amp;rdquo;, we ca
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Success
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;The app was uninstalled if you got &amp;ldquo;Success&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;Of course, you shouldn&amp;rsquo;t remove some important packages(apps) for the Android.(You can get detials by Bing and Google.)&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;The application has been uninstalled successfully when you get &amp;ldquo;Success&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Of course, you shouldn&amp;rsquo;t remove some important packages(apps) for the Android.(Bing or Google for more info.)&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -2550,15 +2710,6 @@ in /etc/modules-load.d/virtio-net.conf&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-        </item>
-        <item>
-        <title>First</title>
-        <link>https://leejkee.github.io/p/first/</link>
-        <pubDate>Wed, 29 Jun 2022 16:44:08 +0800</pubDate>
-        
-        <guid>https://leejkee.github.io/p/first/</guid>
-        <description>&lt;p&gt;Hey, this is first pages.&lt;/p&gt;
-</description>
         </item>
         
     </channel>

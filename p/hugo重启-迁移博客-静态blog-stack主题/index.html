@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='本人对于前端几乎没有任何基础。 这里主要记录一次Hugo博客重启的记录，使用的主题是Stack，理由（配置简单，功能齐全，文档较为友好） 主要内'>
+<title>Hugo重启 迁移博客 静态Blog Stack主题</title>
+
+<link rel='canonical' href='https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/'>
+
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='Hugo重启 迁移博客 静态Blog Stack主题'>
+<meta property='og:description' content='本人对于前端几乎没有任何基础。 这里主要记录一次Hugo博客重启的记录，使用的主题是Stack，理由（配置简单，功能齐全，文档较为友好） 主要内'>
+<meta property='og:url' content='https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/'>
+<meta property='og:site_name' content='ABing&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='hugo' /><meta property='article:tag' content='Stack-theme-hugo' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Windows' /><meta property='article:published_time' content='2023-09-10T12:42:58&#43;08:00'/><meta property='article:modified_time' content='2023-09-10T12:42:58&#43;08:00'/>
+<meta name="twitter:title" content="Hugo重启 迁移博客 静态Blog Stack主题">
+<meta name="twitter:description" content="本人对于前端几乎没有任何基础。 这里主要记录一次Hugo博客重启的记录，使用的主题是Stack，理由（配置简单，功能齐全，文档较为友好） 主要内">
+    <link rel="shortcut icon" href="/logo.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/head-icon_hu953ebd3cb74452801914bc324157ba6e_89158_300x0_resize_box_3.png" width="300"
+                            height="306" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">ABing&#39;s Blog</a></h1>
+            <h2 class="site-description">So you also play Genshin Impact!</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/leejkee'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg t="1694188835314" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7069" width="200" height="200"><path d="M512 12.63616c-282.74688 0-512 229.21216-512 512 0 226.22208 146.69824 418.14016 350.12608 485.82656 25.57952 4.73088 35.00032-11.10016 35.00032-24.63744 0-12.20608-0.47104-52.55168-0.69632-95.31392-142.4384 30.96576-172.50304-60.416-172.50304-60.416-23.28576-59.16672-56.85248-74.91584-56.85248-74.91584-46.44864-31.78496 3.50208-31.1296 3.50208-31.1296 51.4048 3.60448 78.47936 52.75648 78.47936 52.75648 45.6704 78.27456 119.76704 55.64416 149.01248 42.55744 4.58752-33.09568 17.85856-55.68512 32.50176-68.46464-113.72544-12.94336-233.2672-56.85248-233.2672-253.0304 0-55.88992 20.00896-101.5808 52.75648-137.4208-5.3248-12.9024-22.85568-64.96256 4.95616-135.49568 0 0 43.008-13.74208 140.84096 52.49024 40.83712-11.34592 84.64384-17.03936 128.16384-17.24416 43.49952 0.2048 87.32672 5.87776 128.24576 17.24416 97.73056-66.2528 140.65664-52.49024 140.65664-52.49024 27.87328 70.53312 10.3424 122.59328 5.03808 135.49568 32.82944 35.86048 52.69504 81.53088 52.69504 137.4208 0 196.64896-119.78752 239.94368-233.79968 252.6208 18.37056 15.89248 34.73408 47.04256 34.73408 94.80192 0 68.5056-0.59392 123.63776-0.59392 140.51328 0 13.6192 9.216 29.5936 35.16416 24.576 203.32544-67.76832 349.83936-259.62496 349.83936-485.76512 0-282.78784-229.23264-512-512-512z" fill="#444444" p-id="7070"></path></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/382690242?spm_id_from=333.1007.0.0'
+                        target="_blank"
+                        title="哔哩哔哩 (゜-゜)つロ 干杯~"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg t="1694188710528" class="icon" viewBox="0 0 1071 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6050" width="150" height="150"><path d="M887.365188 952.783894H184.455499C82.758914 952.783894 0 876.72402 0 783.272408V336.111466c0-93.477378 82.758914-169.537251 184.455499-169.537252h704.043373c51.969094 0 101.67082 20.225949 136.377002 55.498973A159.256801 159.256801 0 0 1 1071.846453 336.420652V783.272408c0 93.451613-82.758914 169.511486-184.481265 169.511486zM184.455499 251.600495c-54.829069 0-99.429218 37.901109-99.429218 84.510971V783.272408c0 46.609861 44.600149 84.51097 99.429218 84.51097H887.365188c54.829069 0 99.429218-37.901109 99.429218-84.51097V335.415796a74.539706 74.539706 0 0 0-22.570613-53.72115c-18.808844-19.11803-46.377972-30.09415-75.750687-30.094151z" p-id="6051"></path><path d="M397.794168 495.316736L219.651226 535.923226a36.355177 36.355177 0 0 1-15.175903-71.112889l178.142942-40.55496a35.8141 35.8141 0 0 1 43.131513 27.955611c4.302845 19.169562-8.786049 38.854434-27.95561 43.157279zM674.052285 495.316736c-19.169562-4.302845-32.258456-23.987717-27.955611-43.157279a35.8141 35.8141 0 0 1 43.131514-27.955611l178.142941 40.55496a36.355177 36.355177 0 0 1-15.175902 71.112889l-178.142942-40.554959zM268.811876 1023.999845a56.684187 56.684187 0 0 1-56.684187-56.813015v-42.590437a56.684187 56.684187 0 1 1 113.600264 0v42.590437a56.684187 56.684187 0 0 1-56.684187 56.813015zM803.034577 1023.999845a56.684187 56.684187 0 0 1-56.813015-56.813015v-42.590437a56.684187 56.684187 0 1 1 113.600264 0v42.590437a56.684187 56.684187 0 0 1-56.684187 56.813015z" p-id="6052"></path><path d="M248.918821 42.946487m26.538343-29.671097l0 0q26.538343-29.671097 56.20944-3.132755l185.900469 166.272595q29.671097 26.538343 3.132754 56.20944l0 0q-26.538343 29.671097-56.20944 3.132755l-185.900468-166.272595q-29.671097-26.538343-3.132755-56.20944Z" p-id="6053"></path><path d="M577.629382 262.330313m-26.538343-29.671098l0 0q-26.538343-29.671097 3.132755-56.20944l185.900468-166.272595q29.671097-26.538343 56.209441 3.132755l0 0q26.538343 29.671097-3.132755 56.20944l-185.900468 166.272595q-29.671097 26.538343-56.209441-3.132755Z" p-id="6054"></path><path d="M595.621982 751.220076a34.268168 34.268168 0 0 1-26.718865-12.88277l-35.607976-43.801417-36.458238 43.234576a34.577354 34.577354 0 0 1-48.258856 4.354376l-44.316729-36.535536a18.035878 18.035878 0 1 1 22.957096-27.826782l43.079983 35.504913L506.988525 669.904033a34.37123 34.37123 0 0 1 26.358147-12.290163h0.334952a34.345464 34.345464 0 0 1 26.409679 12.728177l35.865631 44.162135L645.323708 677.633695a18.035878 18.035878 0 0 1 21.565757 28.908935l-50.629286 37.798047a34.37123 34.37123 0 0 1-20.638197 6.879399z" p-id="6055"></path></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#hugo在archlinux上的安装">hugo在archlinux上的安装</a></li>
+        <li><a href="#hugo的启动stack主题安装">hugo的启动，stack主题安装</a>
+          <ol>
+            <li><a href="#安装主题stack">安装主题stack</a></li>
+            <li><a href="#修改一些配置">修改一些配置</a></li>
+            <li><a href="#图片文件的说明">图片文件的说明</a></li>
+            <li><a href="#stack主题包含的主要内容">stack主题包含的主要内容</a></li>
+          </ol>
+        </li>
+        <li><a href="#新建文章build推送">新建文章，Build，推送</a>
+          <ol>
+            <li><a href="#新建">新建</a></li>
+            <li><a href="#build">Build</a></li>
+            <li><a href="#推送">推送</a></li>
+          </ol>
+        </li>
+        <li><a href="#从linux迁移到windows">从linux迁移到windows</a>
+          <ol>
+            <li><a href="#windows安装hugo">Windows安装hugo</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/others/" style="background-color: #2a9d8f; color: #fff;">
+                Others
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/">Hugo重启 迁移博客 静态Blog Stack主题</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 10, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>本人对于前端几乎没有任何基础。<br>
+这里主要记录一次Hugo博客重启的记录，使用的主题是Stack，理由（配置简单，功能齐全，文档较为友好）<br>
+主要内容包含以下几点：</p>
+<ul>
+<li>hugo在archlinux上的安装</li>
+<li>hugo的启动，stack主题的安装</li>
+<li>一些基本的新建，build，推送操作</li>
+<li>hugo从linux迁移到windows</li>
+</ul>
+<h3 id="hugo在archlinux上的安装">hugo在archlinux上的安装</h3>
+<p>直接使用pacman安装即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo pacman -Sy hugo
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其他发行版使用对应的包管理器安装即可</p>
+<h3 id="hugo的启动stack主题安装">hugo的启动，stack主题安装</h3>
+<p>可以直接参考<a class="link" href="https://www.gohugo.org/doc/overview/quickstart/"  target="_blank" rel="noopener"
+    >Hugo官方教程</a><br>
+新建一个你放hugo博客的文件夹，然后进入，这里是在用户目录下的HugoBlog文件夹下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new ~/HugoBlog
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/HugoBlog
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="安装主题stack">安装主题stack</h4>
+<p>我选择submodule的方式安装，就是在HugoBlog新建一个git仓库</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>网络不好可以替换到gitee，其他方法参考<a class="link" href="https://stack.jimmycai.com/guide/getting-started"  target="_blank" rel="noopener"
+    >stack官方</a></p>
+<h4 id="修改一些配置">修改一些配置</h4>
+<p>下载stack的内容后，可以选择直接修改theme文件夹下的stack主题的内容，我选择修改本地的文件，一些不需要修改的文件就留在stack主题文件夹里面，需要修改的部分就复制一份到HugoBlog（站点根目录）<br>
+这里我们只复制archetypes文件夹下的内容到跟目录下的archetypes文件夹</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cp themes/hugo-theme-stack/archetypes/* ./archetypes/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>复制官方示例网站的config<a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter/tree/master/config/_default"  target="_blank" rel="noopener"
+    >配置文件</a>，直接把文件拷贝到本地<code>HugoBlog/config/_default/</code>，我这里是全部转为了yaml，也可以直接使用toml。<br>
+配置好之后如图所示：
+<img src="/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/config.png"
+	width="1062"
+	height="487"
+	srcset="/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/config_hu6ba4793fd21ec0cdbadaa2911963abb7_66541_480x0_resize_box_3.png 480w, /p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/config_hu6ba4793fd21ec0cdbadaa2911963abb7_66541_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="218"
+		data-flex-basis="523px"
+	
+></p>
+<p>简单提一下，修改网页的标题啥的在config.yaml里面修改，并且加入<code>theme: hugo-theme-stack</code>启用主题，根目录下的hugo.toml可以直接删掉<br>
+还有一些头像，标签什么的在param.yaml文件里面设置</p>
+<h4 id="图片文件的说明">图片文件的说明</h4>
+<ul>
+<li>配置config文件夹里面的yaml文件用的图片
+<ul>
+<li>params.yaml中的favicon用的图片放在根目录的static文件夹</li>
+<li>其他的yaml用的图片先在根目录的assets文件夹找，找不到的去theme主题文件夹里面的assets文件夹找</li>
+</ul>
+</li>
+<li>写文章的markdown文件中插图全部放在文章所在目录即可</li>
+</ul>
+<h4 id="stack主题包含的主要内容">stack主题包含的主要内容</h4>
+<p>在content文件夹下有以下内容：<br>
+（官方<a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter/tree/master/content/"  target="_blank" rel="noopener"
+    >content文件</a>）</p>
+<ul>
+<li>categories 写分类页面，即点击主页的archive会跳转到一个分类好的页面，下面是文章目录，参考<a class="link" href="https://demo.stack.jimmycai.com/archives/"  target="_blank" rel="noopener"
+    >官方页面</a></li>
+<li>page 每个文件夹对应一个小组件<br>
+<img src="/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/page.png"
+	width="265"
+	height="231"
+	srcset="/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/page_hu1d9aaca936d3a20a701a8431b7b6bb73_4946_480x0_resize_box_3.png 480w, /p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/page_hu1d9aaca936d3a20a701a8431b7b6bb73_4946_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="114"
+		data-flex-basis="275px"
+	
+></li>
+<li>post 放自己的markdown文章的地方</li>
+</ul>
+<h3 id="新建文章build推送">新建文章，Build，推送</h3>
+<h4 id="新建">新建</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new post/分类文件夹/文章.md <span class="c1"># 使用的是archetypes文件夹中的default模板</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>新建分类</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new categories/分类文件夹/_index.md <span class="c1"># 使用的是archetypes文件夹中的categories模板</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>新简小组件page同理。</p>
+<p>写好分类信息，标签信息，标题即可</p>
+<h4 id="build">Build</h4>
+<p>就是把markdown文件转换为可以显示的网页
+直接运行<code>hugo</code>即可</p>
+<h4 id="推送">推送</h4>
+<p>生成的文件在public文件夹下，进入public文件夹并新建git参考，关联到远程的github.io仓库即可，然后git push即可</p>
+<h3 id="从linux迁移到windows">从linux迁移到windows</h3>
+<h4 id="windows安装hugo">Windows安装hugo</h4>
+<ul>
+<li>
+<p>去官方github下载release的<a class="link" href="https://github.com/gohugoio/hugo/releases/download/v0.118.2/hugo_extended_0.118.2_windows-amd64.zip"  target="_blank" rel="noopener"
+    >hugo压缩包</a>
+注意下载extended版本，stack主题需求</p>
+</li>
+<li>
+<p>解压到<code>D:/Hugo/bin</code>，并将该bin路径添加到环境变量path</p>
+</li>
+<li>
+<p>在Hugo目录下新建<code>Site</code>文件夹作为网页根目录，将Linux下的根目录文件全部复制过来即可，本人是从虚拟机迁移到宿主机，后续会将根站点一并推到git仓库，更方便修改更新迁移</p>
+</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/hugo/">hugo</a>
+        
+            <a href="/tags/stack-theme-hugo/">Stack-theme-hugo</a>
+        
+            <a href="/tags/linux/">Linux</a>
+        
+            <a href="/tags/windows/">Windows</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 ABing&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.20.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

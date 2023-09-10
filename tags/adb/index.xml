@@ -19,12 +19,12 @@
 &lt;p&gt;Visit this &lt;a class=&#34;link&#34; href=&#34;https://dl.google.com/android/repository/platform-tools_r33.0.1-windows.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;page&lt;/a&gt;, and download it.(Recommended in &lt;code&gt;C:\Users\ _*usename*_ \adb&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\adb&lt;/code&gt; is a directory created by yourself, you will get a &amp;ldquo;zip flie&amp;rdquo; called &lt;code&gt;platform-tools_r33.0.1-windows.zip&lt;/code&gt; if you click the link above.&lt;/p&gt;
-&lt;p&gt;Then you should extract it to this path, the final directory is like &lt;code&gt;C:\Users\LHame\adb\platform-tools&lt;/code&gt;, where you can find the file &lt;code&gt;adb.exe&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then you should unzip it in this path, the directory should be like &lt;code&gt;C:\Users\LHame\adb\platform-tools&lt;/code&gt;, where you can find the file &lt;code&gt;adb.exe&lt;/code&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;then-add-it-to-environment-variable&#34;&gt;Then, add it to environment variable.&lt;/h1&gt;
 &lt;p&gt;On Windows, just follow these steps:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Copy the path you save the &lt;code&gt;platform-tools&lt;/code&gt;, such as &lt;code&gt;C:\Users\LHame\adb\platform-tools&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Right click &lt;code&gt;This computer&lt;/code&gt;, chose &lt;code&gt;properties&lt;/code&gt;(How to do for the disappear of my &lt;code&gt;This computer&lt;/code&gt;? Right click on your desktop and chose the &lt;code&gt;Personalize&lt;/code&gt;, &lt;code&gt;themes&lt;/code&gt; on the left, &lt;code&gt;Desktop Icons Settings&lt;/code&gt; upper right, ✔ the &lt;code&gt;computer&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Copy the path where you have saved the &lt;code&gt;platform-tools&lt;/code&gt;, for example &lt;code&gt;C:\Users\LHame\adb\platform-tools&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Right click &lt;code&gt;This computer&lt;/code&gt;, chose &lt;code&gt;properties&lt;/code&gt;(No &lt;code&gt;This computer&lt;/code&gt; in your Desktop? Just right click on your desktop and chose the &lt;code&gt;Personalize&lt;/code&gt;, &lt;code&gt;themes&lt;/code&gt; on the left, &lt;code&gt;Desktop Icons Settings&lt;/code&gt; upper right, chose the &lt;code&gt;computer&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;Click &lt;code&gt;Advanced system settings&lt;/code&gt; on the right&lt;/li&gt;
 &lt;li&gt;Click &lt;code&gt;environment variable&lt;/code&gt; on the bottom&lt;/li&gt;
 &lt;li&gt;Chose the &lt;code&gt;path&lt;/code&gt; in the &lt;code&gt;system variable&lt;/code&gt;, then click &lt;code&gt;new&lt;/code&gt;, &lt;code&gt;add&lt;/code&gt;, paste what you copy before&lt;/li&gt;
@@ -50,7 +50,7 @@ Then ,type &lt;code&gt;adb version&lt;/code&gt; and you should get some messages
 &lt;/div&gt;&lt;h1 id=&#34;changes-for-your-smartphone&#34;&gt;changes for your smartphone&lt;/h1&gt;
 &lt;p&gt;This &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/429854110&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;page&lt;/a&gt; will tell you how to do.&lt;br&gt;
-(Emmmm, I am a lazy boy, so I just link a post from Bing. Also many posts about how to unlock the USB-debug options for your mobile can be found. )&lt;/p&gt;
+(Emmmm, I am a lazy boy, so I just link a post from Bing. Also many posts about how to unlock the USB-debug options for your mobile can be found by Bing. )&lt;/p&gt;
 &lt;p&gt;Now, evething is OK.&lt;/p&gt;
 &lt;h1 id=&#34;get-start&#34;&gt;Get start.&lt;/h1&gt;
 &lt;p&gt;Type &lt;code&gt;adb devices&lt;/code&gt; to list the infomation your smartphone, your will get message as:&lt;/p&gt;
@@ -186,8 +186,8 @@ I want to remove a application called &amp;ldquo;XiaomiPayment&amp;rdquo;, we ca
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Success
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;The app was uninstalled if you got &amp;ldquo;Success&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;Of course, you shouldn&amp;rsquo;t remove some important packages(apps) for the Android.(You can get detials by Bing and Google.)&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;The application has been uninstalled successfully when you get &amp;ldquo;Success&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Of course, you shouldn&amp;rsquo;t remove some important packages(apps) for the Android.(Bing or Google for more info.)&lt;/p&gt;
 </description>
         </item>
         

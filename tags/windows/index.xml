@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Windows on ABing&#39;s Blog</title>
+        <link>https://leejkee.github.io/tags/windows/</link>
+        <description>Recent content in Windows on ABing&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 10 Sep 2023 12:42:58 +0800</lastBuildDate><atom:link href="https://leejkee.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo重启 迁移博客 静态Blog Stack主题</title>
+        <link>https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/</link>
+        <pubDate>Sun, 10 Sep 2023 12:42:58 +0800</pubDate>
+        
+        <guid>https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/</guid>
+        <description>&lt;p&gt;本人对于前端几乎没有任何基础。&lt;br&gt;
+这里主要记录一次Hugo博客重启的记录，使用的主题是Stack，理由（配置简单，功能齐全，文档较为友好）&lt;br&gt;
+主要内容包含以下几点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hugo在archlinux上的安装&lt;/li&gt;
+&lt;li&gt;hugo的启动，stack主题的安装&lt;/li&gt;
+&lt;li&gt;一些基本的新建，build，推送操作&lt;/li&gt;
+&lt;li&gt;hugo从linux迁移到windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hugo在archlinux上的安装&#34;&gt;hugo在archlinux上的安装&lt;/h3&gt;
+&lt;p&gt;直接使用pacman安装即可&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo pacman -Sy hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其他发行版使用对应的包管理器安装即可&lt;/p&gt;
+&lt;h3 id=&#34;hugo的启动stack主题安装&#34;&gt;hugo的启动，stack主题安装&lt;/h3&gt;
+&lt;p&gt;可以直接参考&lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/doc/overview/quickstart/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo官方教程&lt;/a&gt;&lt;br&gt;
+新建一个你放hugo博客的文件夹，然后进入，这里是在用户目录下的HugoBlog文件夹下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new ~/HugoBlog
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ~/HugoBlog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;安装主题stack&#34;&gt;安装主题stack&lt;/h4&gt;
+&lt;p&gt;我选择submodule的方式安装，就是在HugoBlog新建一个git仓库&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;网络不好可以替换到gitee，其他方法参考&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/guide/getting-started&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stack官方&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;修改一些配置&#34;&gt;修改一些配置&lt;/h4&gt;
+&lt;p&gt;下载stack的内容后，可以选择直接修改theme文件夹下的stack主题的内容，我选择修改本地的文件，一些不需要修改的文件就留在stack主题文件夹里面，需要修改的部分就复制一份到HugoBlog（站点根目录）&lt;br&gt;
+这里我们只复制archetypes文件夹下的内容到跟目录下的archetypes文件夹&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp themes/hugo-theme-stack/archetypes/* ./archetypes/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;复制官方示例网站的config&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack-starter/tree/master/config/_default&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;配置文件&lt;/a&gt;，直接把文件拷贝到本地&lt;code&gt;HugoBlog/config/_default/&lt;/code&gt;，我这里是全部转为了yaml，也可以直接使用toml。&lt;br&gt;
+配置好之后如图所示：
+&lt;img src=&#34;https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/config.png&#34;
+	width=&#34;1062&#34;
+	height=&#34;487&#34;
+	srcset=&#34;https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/config_hu6ba4793fd21ec0cdbadaa2911963abb7_66541_480x0_resize_box_3.png 480w, https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/config_hu6ba4793fd21ec0cdbadaa2911963abb7_66541_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;218&#34;
+		data-flex-basis=&#34;523px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;简单提一下，修改网页的标题啥的在config.yaml里面修改，并且加入&lt;code&gt;theme: hugo-theme-stack&lt;/code&gt;启用主题，根目录下的hugo.toml可以直接删掉&lt;br&gt;
+还有一些头像，标签什么的在param.yaml文件里面设置&lt;/p&gt;
+&lt;h4 id=&#34;图片文件的说明&#34;&gt;图片文件的说明&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;配置config文件夹里面的yaml文件用的图片
+&lt;ul&gt;
+&lt;li&gt;params.yaml中的favicon用的图片放在根目录的static文件夹&lt;/li&gt;
+&lt;li&gt;其他的yaml用的图片先在根目录的assets文件夹找，找不到的去theme主题文件夹里面的assets文件夹找&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;写文章的markdown文件中插图全部放在文章所在目录即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;stack主题包含的主要内容&#34;&gt;stack主题包含的主要内容&lt;/h4&gt;
+&lt;p&gt;在content文件夹下有以下内容：&lt;br&gt;
+（官方&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack-starter/tree/master/content/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;content文件&lt;/a&gt;）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;categories 写分类页面，即点击主页的archive会跳转到一个分类好的页面，下面是文章目录，参考&lt;a class=&#34;link&#34; href=&#34;https://demo.stack.jimmycai.com/archives/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官方页面&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;page 每个文件夹对应一个小组件&lt;br&gt;
+&lt;img src=&#34;https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/page.png&#34;
+	width=&#34;265&#34;
+	height=&#34;231&#34;
+	srcset=&#34;https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/page_hu1d9aaca936d3a20a701a8431b7b6bb73_4946_480x0_resize_box_3.png 480w, https://leejkee.github.io/p/hugo%E9%87%8D%E5%90%AF-%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2-%E9%9D%99%E6%80%81blog-stack%E4%B8%BB%E9%A2%98/page_hu1d9aaca936d3a20a701a8431b7b6bb73_4946_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;114&#34;
+		data-flex-basis=&#34;275px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;post 放自己的markdown文章的地方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;新建文章build推送&#34;&gt;新建文章，Build，推送&lt;/h3&gt;
+&lt;h4 id=&#34;新建&#34;&gt;新建&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new post/分类文件夹/文章.md &lt;span class=&#34;c1&#34;&gt;# 使用的是archetypes文件夹中的default模板&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;新建分类&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new categories/分类文件夹/_index.md &lt;span class=&#34;c1&#34;&gt;# 使用的是archetypes文件夹中的categories模板&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;新简小组件page同理。&lt;/p&gt;
+&lt;p&gt;写好分类信息，标签信息，标题即可&lt;/p&gt;
+&lt;h4 id=&#34;build&#34;&gt;Build&lt;/h4&gt;
+&lt;p&gt;就是把markdown文件转换为可以显示的网页
+直接运行&lt;code&gt;hugo&lt;/code&gt;即可&lt;/p&gt;
+&lt;h4 id=&#34;推送&#34;&gt;推送&lt;/h4&gt;
+&lt;p&gt;生成的文件在public文件夹下，进入public文件夹并新建git参考，关联到远程的github.io仓库即可，然后git push即可&lt;/p&gt;
+&lt;h3 id=&#34;从linux迁移到windows&#34;&gt;从linux迁移到windows&lt;/h3&gt;
+&lt;h4 id=&#34;windows安装hugo&#34;&gt;Windows安装hugo&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;去官方github下载release的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases/download/v0.118.2/hugo_extended_0.118.2_windows-amd64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo压缩包&lt;/a&gt;
+注意下载extended版本，stack主题需求&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解压到&lt;code&gt;D:/Hugo/bin&lt;/code&gt;，并将该bin路径添加到环境变量path&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在Hugo目录下新建&lt;code&gt;Site&lt;/code&gt;文件夹作为网页根目录，将Linux下的根目录文件全部复制过来即可，本人是从虚拟机迁移到宿主机，后续会将根站点一并推到git仓库，更方便修改更新迁移&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
