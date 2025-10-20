@@ -1,0 +1,105 @@
+---
+title: DarkSoul3 私服搭建
+date: '2025-10-20'
+tags: ['Dark Soul 3', 'linux server']
+draft: false
+summary: 
+---
+## Dark Souls 3私服搭建
+购买国内云服务器，为黑暗之魂3提供联机服务，方便低延迟联机游玩
+
+### 购买云服务器
+* 配置: 2核CPU，内存2g，带宽5Mbps
+* 操作系统: `Windows Server` or `Linux`，示例使用 `Debian12`
+ 
+### 配置服务器
+
+- 网络和防火墙配置  
+云服务器的web控制面板设置访问规则，需要打开`ssh(22)`, `http(80)`, `TCP/UDP(50000,50010,50020,50050)` 
+
+执行以下脚本或者自行配置
+```shell
+#!/bin/bash
+for port in 50000 50010 50020 50050
+do
+    sudo ufw allow $port/tcp
+    sudo ufw allow $port/udp
+done
+sudo ufw allow 22/tcp
+sudo ufw enable
+sudo ufw status
+```
+
+- 安装steamcmd, 参考value官方[wiki](https://developer.valvesoftware.com/wiki/SteamCMD#Debian)
+```shell
+sudo apt update; sudo apt install software-properties-common; sudo apt-add-repository non-free; sudo dpkg --add-architecture i386; sudo apt update
+sudo apt install steamcmd
+```
+
+- 安装Dark Souls 服务端
+```shell
+wget https://github.com/TLeonardUK/ds3os/releases/download/v0.42.0.0-main/linux.zip
+sudo apt install unzip
+unzip linux.zip -d linux
+```
+### 启动前配置
+- 为服务端应用配置运行所需环境
+```shell
+#!/bin/bash
+
+SERVER_PATH="/home/ecs-user/linux/Server/Server"
+
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$(pwd)"
+
+$SERVER_PATH
+```
+将以上内容写入Sever目录下的`launcher.sh`中
+
+- 使用守护进程处理launcher的异常输出
+
+使用任意编辑器新建`ds3server.service`
+```shell
+sudo vim /etc/systemd/system/ds3server.service
+```
+写入以下内容
+```shell
+[Unit]
+Description=Dark Souls Server
+After=network.target
+
+[Service]
+User=ecs-user
+Group=ecs-user
+WorkingDirectory=/home/ecs-user/linux/Server
+ExecStart=/bin/bash /home/ecs-user/linux/Server/launcher.sh
+Restart=always
+RestartSec=5
+StandardOutput=append:/var/log/ds3server.log
+StandardError=append:/var/log/ds3server_error.log
+Environment="LD_LIBRARY_PATH=/home/ecs-user/linux/Server"
+
+[Install]
+WantedBy=multi-user.target
+```
+
+- 启动systemd服务
+```shell
+sudo systemctl daemon-reload 
+sudo systemctl start ds3server.service 
+```
+
+### 疑难
+- Server依赖两个so, 其中一个在Server目录中，还有一个是安装steamcmd之后的，如果你的服务器使用x64的操作系统，务必使用`linux64`下的`steamclient.so`
+- 为你的服务器配置一些选项，需要你阅读官方教程进行配置，我列出一些作为参考
+```
+    "ServerDescription": "Dark Souls III server.",
+    "ServerHostname": "",
+    "ServerId": "",
+    "ServerName": "Long may the sun shine",
+    "ServerPrivateHostname": "",
+    "StartGameServerPortRange": 50060,
+
+```
+重点配置hostname和privatehostname，一个是你服务器的（公网）ipv4，一个是内网地址，具体可以参考官方Discord的教程
+
+### [官方Github地址](https://github.com/TLeonardUK/ds3os)
