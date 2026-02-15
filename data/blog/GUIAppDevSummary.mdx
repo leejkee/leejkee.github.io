@@ -6,5 +6,150 @@ draft: false
 summary: 以QtQuick with C++为例，记录一些使用过的分层架构和设计模式，仅供学习参考。
 ---
 
-## 
+## mvvm简介
 
+model-view-viewmodel
+
+model：数据模型，负责数据的存储和管理，提供接口供viewmodel访问和修改数据。
+view：视图，负责界面展示和用户交互，直接与用户进行交互，显示数据并响应用户操作。
+viewmodel：视图模型，负责连接model和view，处理业务逻辑和数据转换，提供接口供view访问和修改数据，同时监听model的变化并更新view。
+
+对应到Qml中，model通常是一个QObject派生类，包含数据属性和信号槽机制；view是QML文件，定义界面布局和交互逻辑；viewmodel也是一个QObject派生类，负责处理业务逻辑和数据转换，并通过属性和信号槽与view进行通信。
+
+举个例子
+```qml
+// main.qml
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls
+
+ApplicationWindow {
+    height: 480
+    title: "QML Chat UI"
+    visible: true
+    width: 640
+    Rectangle {
+        id: rectangle
+        height: 40
+
+        property alias labelText: messageLabel.text
+
+        Label {
+            id: messageLabel
+            text: "info"
+            color: "#333333"
+
+            elide: Text.ElideRight
+
+            Layout.maximumWidth: rectangle.width * 0.7
+        }
+    }
+}
+
+```
+
+```cpp
+// model.h
+#ifndef MODEL_H
+#define MODEL_H
+
+#include <QObject>
+#include <QString>
+
+class Model : public QObject {
+    Q_OBJECT
+public:
+    explicit Model(QObject *parent = nullptr);
+
+    QString getLabelText() const { return m_labelText; }
+    void setLabelText(const QString &text);
+
+signals:
+    void labelTextChanged(const QString &text);
+
+private:
+    QString m_labelText;
+};
+
+#endif // MODEL_H
+```
+
+```cpp
+// model.cpp
+#include "model.h"
+
+Model::Model(QObject *parent)
+    : QObject(parent), m_labelText("info")
+{
+}
+
+void Model::setLabelText(const QString &text)
+{
+    if (m_labelText != text) {
+        m_labelText = text;
+        emit labelTextChanged(text);
+    }
+}
+```
+
+```cpp
+// modelview.h
+#ifndef MODELVIEW_H
+#define MODELVIEW_H
+
+#include <QObject>
+#include <QString>
+#include "model.h"
+
+class ModelView : public QObject {
+    Q_OBJECT
+    Q_PROPERTY(QString labelText READ labelText WRITE setLabelText NOTIFY labelTextChanged)
+
+public:
+    explicit ModelView(QObject *parent = nullptr);
+
+    QString labelText() const { return m_model->getLabelText(); }
+    void setLabelText(const QString &text);
+
+    Q_INVOKABLE void updateLabel(const QString &newText);
+
+signals:
+    void labelTextChanged();
+
+private:
+    void onModelLabelTextChanged(const QString &text);
+
+    Model *m_model;
+};
+
+#endif // MODELVIEW_H
+```
+
+```cpp
+// modelview.cpp
+#include "modelview.h"
+
+ModelView::ModelView(QObject *parent)
+    : QObject(parent), m_model(new Model(this))
+{
+    connect(m_model, &Model::labelTextChanged,
+            this, &ModelView::onModelLabelTextChanged);
+}
+
+void ModelView::setLabelText(const QString &text)
+{
+    m_model->setLabelText(text);
+}
+
+void ModelView::updateLabel(const QString &newText)
+{
+    m_model->setLabelText(newText);
+}
+
+void ModelView::onModelLabelTextChanged(const QString &text)
+{
+    emit labelTextChanged();
+}
+```
+
+````
