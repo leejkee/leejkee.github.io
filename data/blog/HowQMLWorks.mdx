@@ -1,0 +1,27 @@
+---
+title: How QML Works
+date: '2026-03-10'
+tags: ['Qt', 'C++', 'GUI', 'QtQuick', 'QML']
+draft: false
+summary: 总结一些关于QtQuick的工作原理和使用方法，主要研究QML渲染UI，c++实现业务逻辑的架构设计。
+---
+
+## QML的工作过程
+
+### 纯QML Application
+
+```qml
+
+```
+
+### QML With C++ Backend
+#### 使用MVVM架构简介
+- qml实现view，尽可能不包含任何业务逻辑，仅负责GUI显示和处理用户交互
+- 使用C++实现model，model类通常存储了数据在运行过程中的唯一副本，model要么提供直接操作数据的方式，要么实现操作数据的接口函数，它们会被viewmodel类调用
+- viewmodel应该完成处理用户请求的实现，viewmodel类中应该声明可供qml绑定的Q_PROPERTY属性，并按需要实现set和get函数
+- C++代码中需要将viewmodel类实例化的指针注册到qml的context中，由于MOC提供了反射机制，qml才可调用viewmodel类的函数
+
+#### 在C++代码中启动QML编写的窗口
+
+```cpp
+```
