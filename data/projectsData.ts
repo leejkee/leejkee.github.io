@@ -18,6 +18,12 @@ const projectsData: Project[] = [
     imgSrc: '/static/web-tools/MusicPlayerDemo/img/dog.jpg',
     href: 'static/web-tools/MusicPlayerDemo/index.html',
   },
+  {
+    title: 'Image To Base64',
+    description: '图片转base64, 一种轻量笔记图片插入方案',
+    imgSrc: '',
+    href: 'static/web-tools/webp-base64-v2/index.html',
+  }
 ]
 
 

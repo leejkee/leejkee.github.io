@@ -1,5 +1,18 @@
 {
-  "concurrent": 1,
+  "电路分析": 1,
+  "模拟电路": 1,
+  "algorithm": 1,
+  "greedy": 1,
+  "数据结构": 1,
+  "data-structure": 1,
+  "qt": 2,
+  "c": 2,
+  "gui": 2,
+  "qtquick": 2,
+  "qml": 2,
+  "design-pattern": 1,
+  "architecture": 1,
   "dark-soul-3": 1,
-  "linux-server": 1
+  "linux-server": 1,
+  "concurrent": 1
 }
