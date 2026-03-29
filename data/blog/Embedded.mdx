@@ -1,0 +1,71 @@
+---
+title: MCU编程入门
+date: '2026-03-29'
+tags: ['MCU', 'Embedded', 'C', '单片机', '嵌入式']
+draft: false
+summary: 包含一些和Coretex-M0系列MCU编程的概念性内容
+---
+
+# Coretex-M0的简单介绍
+
+stm32F072c8t6基于ARM Cortex-M0 内核，主频48MHz，16KB SRAM   
+- 32 位
+- F0系列，带USB外设的基础款
+- 48引脚
+- 64KB Flash
+- LQFP封装
+- 工作温度-40°C ~ 85°C
+
+# 时钟
+时钟是进行MCU编程时首先就要配置的选项。  
+
+## SYSCLK系统时钟
+我们需要根据功能复杂程度，决定CPU执行指令的速度（工作频率），因为这直接和功耗挂钩，简单的功能使用低功耗，低频率工作模式，复杂功能就让CPU跑满频率，同时意味着更高功耗。
+
+### （为什么一定要时间间隔相同的周期，我执行一会快一会满不行吗？）  
+使用稳定的时钟频率，是由MCU的CPU设计决定的：    
+* 全局寄存器触发机制  
+现代 CPU 是标准的同步数字电路。其内部所有的寄存器（D触发器）在硬件设计上，被强制规定为只在时钟波形的特定边缘（如上升沿）统一进行数据的锁存和状态更新。时钟的跳变沿，就是全芯片统一行动的唯一“发令枪”。
+* 流水线与微架构调度的“硬编码”（Cortex-M0是三级流水线设计）  
+CPU 内部的指令执行是极其严密的流水线作业（取指、译码、执行）。在芯片设计时，调度中心逻辑已经被硬编码为固定模式（例如：固定预期工位A在1个节拍内交出数据，工位B在2个节拍内算完）。
+这种基于计数的调度逻辑，完全依赖于一个绝对等长、恒定匀速的时钟节拍器。如果节拍忽快忽慢，流水线上的指令交接就会发生严重的数据踩踏（读取冲突或写入覆盖），导致 CPU 状态机瞬间崩溃死机。
+
+## 外设时钟
+外设也需要时钟信号来同步，它们接入同频率的时钟信号，就可以保证其工作严格受到CPU控制，按照预期的时序进行数据交换和状态更新。
+某些外设的协议还会规定工作频率，如USB协议规定了使用48MHz的时钟频率。
+
+## 编程要做的工作
+我们需要为CPU配置工作时钟，也就是SYSCLK；以及为需要使用的外设配置工作时钟。
+
+### 时钟来源
+时钟源可以是内部振荡器（如HSI）或外部晶振（如HSE）。
+stm32f072c8t6有内置的8MHz高速内部振荡器（HSI），也可以连接一个外部晶振（HSE）来提供更稳定的时钟信号。
+### 时钟树
+时钟树规定了时钟信号如何从源头分配到CPU和外设。
+### SYSCLK配置
+stm32f072c8t6内置有HSI和HSI48两种RC振荡时钟，但是RC振荡时钟容易受干扰，所以CPU时钟通常使用外部石英晶振HSE。
+
+理论上SYSCLK可选的时钟信号有四个：
+- HSI：8MHz内部振荡器
+- HSI48：48MHz内部振荡器，专门为USB外设提供时钟
+- HSE：外部晶振，通常是8MHz
+- PLLCLK：通过PLL倍频后的时钟信号，可以从HSI或HSE源生成更高频率的SYSCLK
+
+
+stm32f072c8t6的SYSCLK配置（stmcubemx软件截图）：
+![图片](data:image/webp;base64,UklGRoIFAABXRUJQVlA4WAoAAAAQAAAA3wAArQAAQUxQSOsEAAABLyAQSOE8HRGRB55s682abdu2zRJH3TvQAIFz1oXts06CUt9/TvrfGAjkSOzzPK+fQkT/JwD/u6l5jw4sF/Q7ngHpJRdmmt3GN49mmt2hS3GuTmnUPJlmyZcMRAC9GGv23EOSpiv669UVQ7Jwd3W+iTJynN3eFZcobSJIusYres0op1JgsY/mZoFHfRARI7wRJKSN78sRlSJBqYmQnZlm119xidJxD+n6OKOfl3JoxtVpdovmYQfLBb0YS/YcIdxFzX1UKgaACZWVS23+/6Z0tdHJ1QaxOhJqA6XaYHQlU6j7uaM55kPhPhqlE9C2bK4BzmBy5fpcV/d1P+encinUQfgUpC3Z0DwDSgVzP3c8ATcq1PkDCNWRtja4utK5R7JkAuC5dEt4kJxPAEDFs0wbJUC4DmasQASA8Frjm27yBHSb6bXedTG7QIFmM9eBUZfosNNtphrsKhA3oSZKgHCxFOp+7mgw469mD8n5hJJ9NEoNzPP4QJZMRXMN0Mhy5HGZPtfVfd3RzDO+uQoKdRBuvtfAsRZDI9xgFro+S4w7CN0yZnMDPAkDXYNOIQ7iXs/93NFgxvrrWRNadZNncYxuMwDie/Q7oBc7/xQFwAyGJ2DDgPognUIG47Y83hhXh2sWt3MjYPCjtLOZU1cgYIQCkJbgBvimA1o/Dq1CXIuhPHFHWKhDN8CTAoNvu81AaMsjxlDgljGbu1pHnqGeeHO1vkDPFRykOoAfiatEEUf3QJZMVbDs9pLzqQqLGW2UAOHXGt90MbMwAREAwpHxN2/edXNRoNtMRwi/Vd4rd1Cg2cw1sECoSwvsdJupBrsKxE2oiRIgXCyFup+7X1c6gOR8Qsk+Gm0ZDzeyZHreiFt+O9fAn3j8nAtY6a0+19V93f26vooGsLq3UqiDdIwn0blxxNzjlH+1ofkNy8Wd4dGz0gkZ46u5n7tfV37OzTIdE7ORPJ9492MjbmbWHQJGz0LFiuNiZvkMbhnFItzMLjhxvjSLdahLJFRm99+bSA9kyVSoWz5m1u0l59Oh8Te/lJjxocUsOwWUAOEjr5hedTHL6aiZWY5ABIDwWi8rZoyji5kFBbrNVCQs2Z24EBRoNnOZhHHYOqB0oGOEvW4z1WBXgbgJNVEChIv1tf6a4BlY//CMCd8AkvMJxZow7cz4/GBMPgGQJVP5JsAzJlUcLdPX+mtn3PuzfBOwM8F7xtc8VePTzS1jgtXga+3XO9Y//Hqf8FW88/q/NcLH3CMfgytUCHzIAu2NwFgmIRoPLZZpIw7wVCaQnjBjBQYMLdoiBZCMRzd5Asin5KRIDMLhxewCBVhSIq2BGaMuyWGHfEpOarCrwIChRVsTcYCnmmAERgBSDx+DAxBQjf2BKiMdKhNRmStVxneoTEBlblIZoVtlAqwukxNzNRGCGtekA9QuFbk6YLZcD+kA3MyoGgEAlooIbawi+x9pQF0gKJumF+X/ypEjgO5pSrpDPhIkALEgc6ZHmh4+CtJNkohj0IKoWTjiEQlREJUQE8cUJSWOab8EvLG8B6gPKkF9N+kQNHFKiXwMGMoxjtHMLO1qSpq0dapJFdDEMaXUSgouFgNQM2v1kIyqQVVSSl1MMSVKKWhBZsvAiVbRTvoRNAXpJknEsSja4RGgmpS8CqISYkrkUwsJDrEgu3sv+B+Mav4PCwBWUDggcAAAAHALAJ0BKuAArgA+bTaZSaQjIqEgSACADYlpbuF2sRtAE9r0VcIMghqqTXbaLhBkENVSa7bRcIMghqqTXbaLhBkENVSa7bRcIMghqqTXbaLhBkENVSa7bRcIMghqqTXbaLhBjkAA/v/WAAAAAAAAAAA=)
+
+### PLLCLK
+上节引出PLLCLK，PLLCLK是可用的第二来源的时钟信号，因为它是通过PLL倍频原始时钟信号得到的，可以提供更高频率的时钟信号。
+PLL是可编程锁相环，它可以成倍放大输入时钟信号，其输出的时钟信号就是PLLCLK。
+
+stm32f072c8t6中PLLCLK的配置：
+![图片](data:image/webp;base64,UklGRtIEAABXRUJQVlA4WAoAAAAQAAAAFQEAjAAAQUxQSDcEAAABLyAQSOE8HRGRB96rbc+Sbdu2OVlz/GcTCwjBAlYCBSCu2//9y/6bkS8xHMdxfowR0X8IbtsIcqieF5n+BACAyFn0H2B3kxFGAB1WTW6SspDnutGt8sVp5+6OaajC6IbwEB0gS1+H8et6LfCIQxXGSxjdNUrK0ZPrWx1G95Byhjk0SazD6EIUJhNybuswursrUNZLGP2rnIF8bySMbgglsdtoN9CBaeDxcIFJdHBkbeTxaKQtwFn0/0sqdyL0eia6Qj8bkc9ELPNpK9SfCJIrlaLu9zdhUdUW7CuoX4ZeCp7AykDny/Tj+XQ/1w6ocrlDlDXE4p7mmrABsbSnhfm9fgBTiZaby9ZCew60phPi5RS0QIa7OwFRAPVUUrBH+0odUAn4ktngURgBCOXRFWZSspiWepjZ0BV8AADwOjcUogDqy2YmoEALZMqWHK+0ppPCwQzZWk4DwD9A6iq5m6/sisy5UkUffc317ka3QD7W3cJot8rMmblmy59o4yERvUzWPK4ppmFF5Se7JqJncuohHaihUfTLgyCbPnUX53JMklL0azPdEmnm/kEujW74V0rR8/UixeS7Dbo0l31OPh1m+UBomujWac2V9uU5vYyugvmR6vZgDSihmk2V3Drhbr6yK5JielzHwferEsykD0D3Shp69hU96y3LKfn2cPFi5s1cQz7KZK0NSRtvmynqfn8TGPkT1hXVq6+gPmCVpBPgAoT4OAE/nk/385swjvySMxiihF/PVvIJaEKUwBj9/Qgx7csfML+/CYw8/zrEzvEc2Onp9yRvof2ezt2OQ99Edhz/5GRrjzINH0drOgF8ld5O1H8IbWdaIL+wwc+pA3kHt1UmCtHkfWwAhSiAevDRbHBzMIa5BORNxuvmI/oOlBoAoocoO5ldFNQBlUDOZmYzCWRh1BNli2rPIQIJAIAWMvQppdRv62Fm9oARgAApLrqwfLRk0L7vb8uir2TFZDa8ujtIC4f6KNB/fbk90+oiX5kNfkZWaJJNz5XE7ZMFMhcAgDbvfB6t9SwfPlrreFWtoWcTpmHzM1LDhQQAoLKTOkAhCqAePA5molvDgh0tUzdCtzSwE7yiBTLgYYEerSUK0fz7aU0nizb2Vht7F7K1nAaAk7KnN+l3dN7eEDHty3NcG5Tcf1Qp6n5/V8+nP8xk9d1xdx/iK+hFDpzJ9Z/EBapjtR/jx/Ppfn5Xz+dRPu5wxPrY4ZM04US439/V8ylwILvd7cZntUHJ/TdJ019K5+aiJ/rCDX7mAjSFe5gHhcpXyUVXOmudQqTra3wx+m2ZmQ0ZlNy3SPFjrZ6Gm2ftKDerAYXKV8lFVzbPKy5AA1EKBjPREz1kSk8Bmv4CnTsHANWVsltU9aV/F/WewlsSy/8tiIniW5DdeeiE8pupak6gmZaTSKHz5yGexg89jzfQjvOo8vzHIQBWUDggdAAAAPALAJ0BKhYBjQA+bTaZSaQjIqEgSACADYlpbuF2sRtAE9r0VcIMghqqTXbaLhBkENVSa7bRcIMghqqTXbaLhBkENVSa7bRcIMghqqTXbaLhBkENVSa7bRcIMghqqTXbaLhBkENVSYQAAP7/1gAAAAAAAAAA)
+
+如图，输入HSE的8MHz信号，那么输出的就是48MHz信号，可以用于CPU时钟和USB外设时钟。
+
+
+# 参考资料
+
+1. **[英] Joseph Yiu**, *ARM Cortex-M0与Cortex-M0+权威指南(第2版)* [M]. 吴常玉, 张淑, 吴卫东, 译. 北京: 清华大学出版社, 2017.
+2. **STMicroelectronics**, [*RM0091: STM32F0x1/STM32F0x2/STM32F0x8 advanced Arm®-based 32-bit MCUs*](https://www.st.com/resource/en/reference_manual/rm0091-stm32f0x1stm32f0x2stm32f0x8-advanced-armbased-32bit-mcus-stmicroelectronics.pdf), Reference manual, Rev 10, 2022.

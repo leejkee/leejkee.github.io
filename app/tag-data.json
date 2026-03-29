@@ -1,4 +1,9 @@
 {
+  "mcu": 1,
+  "embedded": 1,
+  "c": 3,
+  "单片机": 1,
+  "嵌入式": 1,
   "prompt-engineering": 1,
   "提示词工程": 1,
   "crtf": 1,
@@ -9,7 +14,6 @@
   "数据结构": 1,
   "data-structure": 1,
   "qt": 2,
-  "c": 2,
   "gui": 2,
   "qtquick": 2,
   "qml": 2,
