@@ -1,0 +1,108 @@
+---
+title: 利用STM32自制一个游戏手柄
+date: '2026-05-01'
+tags: ['MCU', 'Embedded', 'C', '单片机', '嵌入式', 'USB', 'HID', 'Gamepad']
+draft: false
+summary: 初步完成的游戏手柄，使用stm32f072c8t6单片机，遵循USB HID设备协议，兼容Windows DirectInput 设备，可以在joy.cpl中成功工作
+---
+## 技术选型
+- **MCU**: 需要使用 `USB`、`GPIO`、`ADC`、`DMA` 外设，选用 `STM32F072C8T6`
+- **固件支持**: `USB HID Gamepad`
+- **开发工具**: `STM32CubeIDE` / `STM32CubeMonitor` / `Keil uVision`
+- **上位机**: Windows `DirectInput` / Web Gamepad API
+
+## 硬件准备
+- `STM32F072C8T6` 核心板（包含 USB Type-C 接口）
+- ST-Link 调试器
+- `HS-S34A` 双轴摇杆模块
+- 按钮 × 若干
+
+## Demo目标
+跑通单个摇杆的 `DMA` + `ADC` 采集，通过 `USB HID` 协议将数据传输到 PC，并在 Windows 的游戏控制器设置界面（`joy.cpl`）中正确显示摇杆状态。
+### 电路连接
+
+摇杆模块原理图
+![图片](/static/blog_images/joystick-circuit-diagram.webp)
+核心板部分原理图
+![图片](/static/blog_images/stm32-core-board-circuit.webp)
+
+
+### 工程初始化
+使用 `STM32CubeMX` 生成标准的 `ARM-MDK` 工程，免去使用标准库手写初始化代码的繁琐步骤。
+`Start My Project from MCU` (ACCESS TO MCU SELECTOR) → `Commercial Part Number` 选择 `STM32F072C8T6` → `Start Project`
+
+###  工程配置
+
+#### 开启 ST-Link 的 SWD 调试接口
+`System Core` → `SYS`
+- [x] `Debug Serial Wire`
+
+#### RCC
+`HSE` 选择 `Crystal/Ceramic Resonator`，即使用核心板上的外部晶振，本核心板为 `8 MHz`。
+
+#### Clock Configuration
+- **选择时钟源**: 本 Demo 选用 `HSE` 外部石英晶振。`STM32F072C8T6` 的主频与 USB 规范要求的频率一致，因此通过 `PLL` 倍频得到的 `48 MHz` 可同时供给 `System Clock Mux` 和 `USB Clock Mux`。
+- **配置示意图**: 主要需在 `RCC` 中开启外部晶振选项。
+  ![时钟配置](/static/blog_images/gamepad/clock-config.webp)
+
+#### GPIO & ADC
+Demo 的核心是将 `ADC` 采集的数据通过 `DMA` 搬运到内存中。本节配置 `ADC` 和 `DMA` 相关参数。
+
+| 信号 | 引脚  | 功能         |
+|:----:|:-----:|:------------:|
+|  X   | `PA0` | `ADC_IN0`    |
+|  Y   | `PA1` | `ADC_IN1`    |
+|  K   | `PA2` | `GPIO_Input` |
+
+  ![GPIO与ADC引脚配置](/static/blog_images/gamepad/gpio-adc-pins.webp)
+
+##### ADC 和 DMA 配置
+`Analog` → `ADC`
+- 在 `DMA Settings` 选项中添加 DMA 通道：
+
+| DMA Request |    Channel     |       Direction      | Priority |
+|:-----------:|:--------------:|:--------------------:|:--------:|
+|    `ADC1`   | `DMA1_Channel1` | Peripheral to Memory |   High   |
+
+`DMA Request Settings` 选择 `Mode` 为 `Circular`。
+  ![DMA配置](/static/blog_images/gamepad/dma-settings.webp)
+
+- 在 `Parameter Settings` 中：
+  - `ADC_Settings`：配置 `Continuous Conversion Mode` 为 `Enabled`，`DMA Continuous Requests` 为 `Enabled`。
+  - `ADC_Regular_ConversionMode`：配置采样时间 `Sampling Time` 为 `239.5 Cycles`。
+  ![ADC参数设置](/static/blog_images/gamepad/adc-params.webp)
+
+##### USB 配置
+我们需要开发的是自定义设备，应选择 `Custom HID Device`。
+
+- `Connectivity` → `USB`：勾选 `Device (FS)`。`STM32F072C8T6` 的数据手册中说明 `PA11` 和 `PA12` 引脚复用为 `USB_DM` 和 `USB_DP`。  
+  *▲ CubeMX中使能USB Device (FS)*
+  ![USB Device (FS) 配置界面，勾选Device (FS)使能USB外设](/static/blog_images/gamepad/usb-device.webp)
+  *▲ 数据手册中PA11/PA12的引脚复用定义*
+  ![STM32F072C8T6数据手册引脚复用表：PA11复用为USB_DM，PA12复用为USB_DP](/static/blog_images/gamepad/stm32f072-pin-mux.webp)
+
+- `Middleware and Software Packs` → `USB_DEVICE`：`Class for FS IP` 选择 `Custom Human Interface Device Class (HID)`
+  - `Configuration` → `Parameter Settings`：`USBD_CUSTOM_HID_REPORT_DESC_SIZE` 需根据实际需求修改。本文基于已完成的项目编写，直接使用 `48` 即可。
+  ![USB HID 配置](/static/blog_images/gamepad/usb-hid-config.webp)
+
+#### 项目管理
+为方便使用 `Keil`，直接选择生成 `MDK-ARM` 工程，配置好工程名称，注意不要使用中文路径。
+  ![项目管理配置](/static/blog_images/gamepad/project-management.webp)
+
+在代码生成选项中，勾选"仅复制必要的库文件"。
+  ![代码生成选项](/static/blog_images/gamepad/code-generation.webp)
+
+#### 生成工程
+点击右上角 `GENERATE CODE` 即可生成工程，随后使用 `Keil` 打开进行开发。
+
+
+### 在Keil 中进行功能开发和测试
+
+#### USB设备固件编写
+#### 完成数据的采集
+#### 把数据通过USB送到PC
+#### 上位机的使用
+
+## 从HID到Xinput
+
+### Xinput协议
